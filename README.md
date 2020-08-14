@@ -14,8 +14,8 @@
 ### 1. Find homologs in multiple species (Ex. human/mouse/rat) 
 make homoCall 
 * human/mouse/rat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- 14547
-* human/hamster/mouse/rat -- 13890
-* mouse/human/macaque &nbsp; &nbsp;-- 14422
+* human/hamster/mouse/rat &nbsp;-- 13890
+* mouse/human/macaque &nbsp; &nbsp; &nbsp;-- 14422
 
 ### 2. Extract all protein coding sequences in each species.
 make cds  
