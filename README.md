@@ -67,20 +67,20 @@ make prank_map
 
 ## Figure
 ### 1. Count the proportion of phase 0, 1, 2 indels of focal species together.
-make mafft_phase
-make prank_phase
+make mafft_phase  
+make prank_phase  
 
 ### 2. Generate displacement bar plot between prior-post indels.
-make mafft_dis
-make prank_dis
+make mafft_dis  
+make prank_dis  
 
 ### 3. Generate edge-bias HTML report
-make mafft_edge_report
-make prank_edge_report
+make mafft_edge_report  
+make prank_edge_report  
 
 ### 4. Count the proportion of phase 0, 1, 2 indels of focal species seperately.
-make mafft_phase_plot
-make prank_phase_plot
+make mafft_phase_plot  
+make prank_phase_plot  
 
 ### 5. Count the effective proportion of phase 1 & 2 indels.
-make_eff_phase
+make_eff_phase  
