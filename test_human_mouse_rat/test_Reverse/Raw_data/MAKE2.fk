@@ -1,0 +1,25 @@
+
+#Variables
+RSCRIPT=Rscript --vanilla
+
+LIST=../../Raw_data/nameList.1.txt
+
+
+###############################################
+
+.PHONY:  default all clean
+.PHONY:	 aa_rev
+
+
+#Generate new namelist
+NAMELIST_NEW:=$(shell test -f $(LIST) && cat $(LIST) | sed -e 's/.fa//g')
+
+
+aa_reverse_seq:	aa_rev
+
+aa_rev:$(patsubst %,aa_reverse_seq/%.fa,$(NAMELIST_NEW))
+
+#Reverse AA seq
+aa_reverse_seq/%.fa:../../Script/rev_aa.R aa_seq/%.fa aa_reverse_seq/ 
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^)
+

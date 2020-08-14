@@ -1,0 +1,1098 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>
+      td { font-family: monospace; }
+      table,td { border: 1px solid black; }
+      table {border-collapse: collapse;}
+      .td3 {border-left: 5px double;}
+      
+    </style>
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <th></th>
+        <th>Original Alignment</th>
+        <th></th>
+        <th>Better Alignment</th>
+      </tr> 
+      <tr>
+       <td> <span style="color:red;">A</span>RYSSA <br/> <span style="color:red;">F</span>R--SA </td> 
+       <td> <span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span>CG<span style="color:red;">G</span>TACAGCTCAGCA <br/> <span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">C</span>CG<span style="color:red;">C</span>------TCAGCA </td> 
+       <td class="td3"> AR<span style="color:red;">Y</span><span style="color:red;">S</span>SA <br/> --<span style="color:red;">F</span><span style="color:red;">R</span>SA </td> 
+       <td> GCTCGGT<span style="color:red;">A</span>C<span style="color:red;">A</span>GCTCAGCA <br/> ------T<span style="color:red;">T</span>C<span style="color:red;">C</span>GCTCAGCA </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span><span style="color:red;">I</span>KES <br/> <span style="color:red;">T</span><span style="color:red;">L</span>-ES </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">A</span>T<span style="color:red;">A</span>AAGGAGTCT <br/> <span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">C</span>T<span style="color:red;">G</span>---GAGTCT </td> 
+       <td class="td3"> M<span style="color:red;">I</span><span style="color:red;">K</span>ES <br/> -<span style="color:red;">T</span><span style="color:red;">L</span>ES </td> 
+       <td> CTGA<span style="color:red;">T</span>A<span style="color:red;">A</span><span style="color:red;">A</span>GGAGTCT <br/> ---A<span style="color:red;">C</span>A<span style="color:red;">C</span><span style="color:red;">T</span>GGAGTCT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">P</span>GELSA<span style="color:red;">S</span>R <br/> <span style="color:red;">S</span>G----<span style="color:red;">F</span>R </td> 
+       <td> <span style="color:red;">C</span>C<span style="color:red;">T</span>GG<span style="color:red;">G</span>GAGCTCTCAGCCT<span style="color:red;">C</span>CAGG <br/> <span style="color:red;">T</span>C<span style="color:red;">A</span>GG<span style="color:red;">C</span>------------T<span style="color:red;">T</span>CAGG </td> 
+       <td class="td3"> PGELS<span style="color:red;">A</span><span style="color:red;">S</span>R <br/> ----S<span style="color:red;">G</span><span style="color:red;">F</span>R </td> 
+       <td> CCTGGGGAGCTCTCAG<span style="color:red;">C</span>CT<span style="color:red;">C</span>CAGG <br/> ------------TCAG<span style="color:red;">G</span>CT<span style="color:red;">T</span>CAGG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">S</span><span style="color:red;">Q</span>SFV <br/> <span style="color:red;">P</span><span style="color:red;">K</span>-FV </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>A<span style="color:red;">A</span>AGTTTTGT<span style="color:red;">C</span> <br/> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span>A<span style="color:red;">G</span>---TTTGT<span style="color:red;">T</span> </td> 
+       <td class="td3"> S<span style="color:red;">Q</span><span style="color:red;">S</span>FV <br/> -<span style="color:red;">P</span><span style="color:red;">K</span>FV </td> 
+       <td> AGCC<span style="color:red;">A</span>AA<span style="color:red;">G</span><span style="color:red;">T</span>TTTGT<span style="color:red;">C</span> <br/> ---C<span style="color:red;">C</span>AA<span style="color:red;">A</span><span style="color:red;">G</span>TTTGT<span style="color:red;">T</span> </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">L</span>SGSRNSR <br/> <span style="color:red;">S</span>S----SR </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">T</span>C<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span>GGCAGCAGGAACAGCAGA <br/> <span style="color:red;">A</span><span style="color:red;">G</span>C<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>------------AGCAGA </td> 
+       <td class="td3"> LSGS<span style="color:red;">R</span><span style="color:red;">N</span>SR <br/> ----<span style="color:red;">S</span><span style="color:red;">S</span>SR </td> 
+       <td> CTCTCTGGCAGCAG<span style="color:red;">G</span>A<span style="color:red;">A</span>CAGCAGA <br/> ------------AG<span style="color:red;">C</span>A<span style="color:red;">G</span>CAGCAGA </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">P</span>SQLSSAR <br/> <span style="color:red;">L</span>S----AR </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">C</span>TC<span style="color:red;">T</span>CAGTTGTCATCGGCAAGA <br/> <span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">A</span>TC<span style="color:red;">A</span>------------GCAAGA </td> 
+       <td class="td3"> PSQL<span style="color:red;">S</span>SAR <br/> ----<span style="color:red;">L</span>SAR </td> 
+       <td> CCCTCTCAGTTGT<span style="color:red;">C</span>ATC<span style="color:red;">G</span>GCAAGA <br/> ------------T<span style="color:red;">T</span>ATC<span style="color:red;">A</span>GCAAGA </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">R</span>LQSG <br/> <span style="color:red;">S</span>L-SG </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">T</span>T<span style="color:red;">A</span>CAATC<span style="color:red;">C</span>GGT <br/> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">C</span>T<span style="color:red;">T</span>---TC<span style="color:red;">A</span>GGT </td> 
+       <td class="td3"> R<span style="color:red;">L</span><span style="color:red;">Q</span>SG <br/> -<span style="color:red;">S</span><span style="color:red;">L</span>SG </td> 
+       <td> AGGT<span style="color:red;">T</span><span style="color:red;">A</span>C<span style="color:red;">A</span><span style="color:red;">A</span>TC<span style="color:red;">C</span>GGT <br/> ---T<span style="color:red;">C</span><span style="color:red;">C</span>C<span style="color:red;">T</span><span style="color:red;">T</span>TC<span style="color:red;">A</span>GGT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">E</span><span style="color:red;">S</span>T<span style="color:red;">I</span>L <br/> <span style="color:red;">R</span><span style="color:red;">D</span>-<span style="color:red;">V</span>L </td> 
+       <td> <span style="color:red;">G</span><span style="color:red;">A</span>A<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span>ACA<span style="color:red;">A</span>TTCTC <br/> <span style="color:red;">A</span><span style="color:red;">G</span>A<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span>---<span style="color:red;">G</span>TTCTC </td> 
+       <td class="td3"> E<span style="color:red;">S</span><span style="color:red;">T</span><span style="color:red;">I</span>L <br/> -<span style="color:red;">R</span><span style="color:red;">D</span><span style="color:red;">V</span>L </td> 
+       <td> GAAAG<span style="color:red;">T</span><span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span>TTCTC <br/> ---AG<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">G</span>TTCTC </td> 
+       </tr> 
+      <tr>
+       <td> RRRSL <br/> RR-SL </td> 
+       <td> <span style="color:red;">C</span>G<span style="color:red;">A</span>AG<span style="color:red;">A</span>AGAAGCCTG <br/> <span style="color:red;">A</span>G<span style="color:red;">G</span>AG<span style="color:red;">G</span>---AGCCTG </td> 
+       <td class="td3"> RRRSL <br/> -RRSL </td> 
+       <td> CGAAG<span style="color:red;">A</span>AG<span style="color:red;">A</span>AGCCTG <br/> ---AG<span style="color:red;">G</span>AG<span style="color:red;">G</span>AGCCTG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">Q</span><span style="color:red;">N</span>I<span style="color:red;">E</span>K <br/> <span style="color:red;">R</span><span style="color:red;">T</span>-<span style="color:red;">Q</span>K </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span>A<span style="color:red;">A</span><span style="color:red;">T</span>ATC<span style="color:red;">G</span>AGAAG <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">A</span>A<span style="color:red;">C</span><span style="color:red;">A</span>---<span style="color:red;">C</span>AGAAG </td> 
+       <td class="td3"> Q<span style="color:red;">N</span><span style="color:red;">I</span><span style="color:red;">E</span>K <br/> -<span style="color:red;">R</span><span style="color:red;">T</span><span style="color:red;">Q</span>K </td> 
+       <td> CAGA<span style="color:red;">A</span><span style="color:red;">T</span>A<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">G</span>AGAAG <br/> ---A<span style="color:red;">G</span><span style="color:red;">A</span>A<span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">C</span>AGAAG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">S</span>LLYP <br/> <span style="color:red;">P</span>L-YP </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>CTGCTTTATCCA <br/> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">G</span>CTG---TATCCA </td> 
+       <td class="td3"> S<span style="color:red;">L</span>LYP <br/> -<span style="color:red;">P</span>LYP </td> 
+       <td> AGCC<span style="color:red;">T</span>GCT<span style="color:red;">T</span>TATCCA <br/> ---C<span style="color:red;">C</span>GCT<span style="color:red;">G</span>TATCCA </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">R</span>SYGY <br/> <span style="color:red;">S</span>S-GY </td> 
+       <td> <span style="color:red;">C</span>G<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>TATGGCTAC <br/> <span style="color:red;">A</span>G<span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span>---GGCTAC </td> 
+       <td class="td3"> RS<span style="color:red;">Y</span>GY <br/> -S<span style="color:red;">S</span>GY </td> 
+       <td> CGAAGCT<span style="color:red;">A</span>TGGCTAC <br/> ---AGCT<span style="color:red;">C</span>TGGCTAC </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">N</span>ALSVTS <br/> <span style="color:red;">S</span>A---TS </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">A</span>TGC<span style="color:red;">T</span>CTTTCTGTAACCAGT <br/> <span style="color:red;">T</span><span style="color:red;">C</span>TGC<span style="color:red;">G</span>---------ACCAGT </td> 
+       <td class="td3"> NALS<span style="color:red;">V</span>TS <br/> ---S<span style="color:red;">A</span>TS </td> 
+       <td> AATGCTCTTTCTG<span style="color:red;">T</span><span style="color:red;">A</span>ACCAGT <br/> ---------TCTG<span style="color:red;">C</span><span style="color:red;">G</span>ACCAGT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">S</span><span style="color:red;">I</span>PSD <br/> <span style="color:red;">K</span><span style="color:red;">V</span>-SD </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">A</span>T<span style="color:red;">A</span>CCATCAGAT <br/> <span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span>T<span style="color:red;">T</span>---TCAGAT </td> 
+       <td class="td3"> S<span style="color:red;">I</span><span style="color:red;">P</span>SD <br/> -<span style="color:red;">K</span><span style="color:red;">V</span>SD </td> 
+       <td> TCCA<span style="color:red;">T</span>A<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">A</span>TCAGAT <br/> ---A<span style="color:red;">A</span>A<span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">T</span>TCAGAT </td> 
+       </tr> 
+      <tr>
+       <td> SPSPRA <br/> SP--RA </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span>CC<span style="color:red;">T</span>AGCCCAAGGGCA <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>CC<span style="color:red;">A</span>------AGGGCA </td> 
+       <td class="td3"> SPSPRA <br/> --SPRA </td> 
+       <td> TCTCCTAGCCCAAGGGCA <br/> ------AGCCCAAGGGCA </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">T</span>ITDVEA<span style="color:red;">V</span> <br/> <span style="color:red;">V</span>I----A<span style="color:red;">A</span> </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">T</span>AT<span style="color:red;">T</span>ACAGATGTGGAAGCTG<span style="color:red;">T</span>T <br/> <span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">G</span>AT<span style="color:red;">C</span>------------GCTG<span style="color:red;">C</span>T </td> 
+       <td class="td3"> TITDV<span style="color:red;">E</span>A<span style="color:red;">V</span> <br/> ----V<span style="color:red;">I</span>A<span style="color:red;">A</span> </td> 
+       <td> ACTATTACAGATGTG<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span>GCTG<span style="color:red;">T</span>T <br/> ------------GTG<span style="color:red;">A</span><span style="color:red;">T</span><span style="color:red;">C</span>GCTG<span style="color:red;">C</span>T </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">S</span><span style="color:red;">I</span>GSP<span style="color:red;">G</span> <br/> <span style="color:red;">D</span><span style="color:red;">F</span>--P<span style="color:red;">D</span> </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span>C<span style="color:red;">A</span>T<span style="color:red;">A</span>GGCTCTCCAG<span style="color:red;">G</span>C <br/> <span style="color:red;">G</span><span style="color:red;">A</span>C<span style="color:red;">T</span>T<span style="color:red;">T</span>------CCAG<span style="color:red;">A</span>C </td> 
+       <td class="td3"> SI<span style="color:red;">G</span><span style="color:red;">S</span>P<span style="color:red;">G</span> <br/> --<span style="color:red;">D</span><span style="color:red;">F</span>P<span style="color:red;">D</span> </td> 
+       <td> AGCATAG<span style="color:red;">G</span>CT<span style="color:red;">C</span>TCCAG<span style="color:red;">G</span>C <br/> ------G<span style="color:red;">A</span>CT<span style="color:red;">T</span>TCCAG<span style="color:red;">A</span>C </td> 
+       </tr> 
+      <tr>
+       <td> LLPDT <br/> LL-DT </td> 
+       <td> <span style="color:red;">C</span>T<span style="color:red;">T</span><span style="color:red;">T</span>T<span style="color:red;">A</span>CCTGACACA <br/> <span style="color:red;">T</span>T<span style="color:red;">A</span><span style="color:red;">C</span>T<span style="color:red;">T</span>---GACACA </td> 
+       <td class="td3"> LL<span style="color:red;">P</span>DT <br/> -L<span style="color:red;">L</span>DT </td> 
+       <td> CTTTTAC<span style="color:red;">C</span>TGACACA <br/> ---TTAC<span style="color:red;">T</span>TGACACA </td> 
+       </tr> 
+      <tr>
+       <td> SLRG<span style="color:red;">L</span><span style="color:red;">R</span> <br/> SL--<span style="color:red;">V</span><span style="color:red;">S</span> </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span>TGAGAGGG<span style="color:red;">C</span>T<span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">A</span> <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>TG------<span style="color:red;">G</span>T<span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span> </td> 
+       <td class="td3"> SL<span style="color:red;">R</span><span style="color:red;">G</span><span style="color:red;">L</span><span style="color:red;">R</span> <br/> --<span style="color:red;">S</span><span style="color:red;">L</span><span style="color:red;">V</span><span style="color:red;">S</span> </td> 
+       <td> TCTTTGAG<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span>G<span style="color:red;">C</span>T<span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">A</span> <br/> ------AG<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span>G<span style="color:red;">G</span>T<span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span> </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">X</span><span style="color:red;">X</span>YGIISL <br/> <span style="color:red;">I</span><span style="color:red;">I</span>----SL </td> 
+       <td> <span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span>TATGGGATCATAAGCCTT <br/> <span style="color:red;">A</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">T</span><span style="color:red;">A</span>------------AGCCTT </td> 
+       <td class="td3"> XXYGIISL <br/> ----IISL </td> 
+       <td> NNNNNNTATGGGATCATAAGCCTT <br/> ------------ATCATAAGCCTT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">P</span>EVIL <br/> <span style="color:red;">E</span>E-IL </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span>GA<span style="color:red;">A</span>GTGATTCTA <br/> <span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span>GA<span style="color:red;">G</span>---ATTCTA </td> 
+       <td class="td3"> PE<span style="color:red;">V</span>IL <br/> -E<span style="color:red;">E</span>IL </td> 
+       <td> CCTGAAG<span style="color:red;">T</span>GATTCTA <br/> ---GAAG<span style="color:red;">A</span>GATTCTA </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span><span style="color:red;">M</span>IDP <br/> <span style="color:red;">I</span><span style="color:red;">L</span>-DP </td> 
+       <td> <span style="color:red;">T</span>T<span style="color:red;">G</span><span style="color:red;">A</span>T<span style="color:red;">G</span>ATTGACCCG <br/> <span style="color:red;">A</span>T<span style="color:red;">T</span><span style="color:red;">C</span>T<span style="color:red;">T</span>---GACCCG </td> 
+       <td class="td3"> M<span style="color:red;">M</span><span style="color:red;">I</span>DP <br/> -<span style="color:red;">I</span><span style="color:red;">L</span>DP </td> 
+       <td> TTGAT<span style="color:red;">G</span><span style="color:red;">A</span>TTGACCCG <br/> ---AT<span style="color:red;">T</span><span style="color:red;">C</span>TTGACCCG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">T</span><span style="color:red;">S</span>TVH <br/> <span style="color:red;">L</span><span style="color:red;">A</span>-VH </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span>C<span style="color:red;">G</span>ACTGTCCAT <br/> <span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">G</span>C<span style="color:red;">T</span>---GTCCAT </td> 
+       <td class="td3"> T<span style="color:red;">S</span><span style="color:red;">T</span>VH <br/> -<span style="color:red;">L</span><span style="color:red;">A</span>VH </td> 
+       <td> ACCT<span style="color:red;">C</span>G<span style="color:red;">A</span>CTGTCCAT <br/> ---T<span style="color:red;">T</span>G<span style="color:red;">G</span>CTGTCCAT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">S</span>QPPS <br/> <span style="color:red;">Q</span>Q-PS </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span>CAGCCGCCTTCA <br/> <span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span>CAG---CCTTCA </td> 
+       <td class="td3"> SQ<span style="color:red;">P</span>PS <br/> -Q<span style="color:red;">Q</span>PS </td> 
+       <td> TCCCAGC<span style="color:red;">C</span>GCCTTCA <br/> ---CAGC<span style="color:red;">A</span>GCCTTCA </td> 
+       </tr> 
+      <tr>
+       <td> RRRAV <br/> RR-AV </td> 
+       <td> <span style="color:red;">C</span>G<span style="color:red;">G</span>AGAAGAGCTGTG <br/> <span style="color:red;">A</span>G<span style="color:red;">A</span>AGA---GCTGTG </td> 
+       <td class="td3"> RRRAV <br/> -RRAV </td> 
+       <td> CGGAGAAGAGCTGTG <br/> ---AGAAGAGCTGTG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">R</span>SSQQ <br/> <span style="color:red;">L</span>S-QQ </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span>A<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">A</span>AGCCAGCAG <br/> <span style="color:red;">T</span><span style="color:red;">T</span>A<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>---CAGCAG </td> 
+       <td class="td3"> R<span style="color:red;">S</span>SQQ <br/> -<span style="color:red;">L</span>SQQ </td> 
+       <td> AGAT<span style="color:red;">C</span>AAGCCAGCAG <br/> ---T<span style="color:red;">T</span>AAGCCAGCAG </td> 
+       </tr> 
+      <tr>
+       <td> RSRSRS<span style="color:red;">F</span>S <br/> RS----<span style="color:red;">L</span>S </td> 
+       <td> <span style="color:red;">C</span>GGTCCAGGTCCAGGTCC<span style="color:red;">T</span>TCTCC <br/> <span style="color:red;">A</span>GGTCC------------<span style="color:red;">C</span>TCTCC </td> 
+       <td class="td3"> RSRSRS<span style="color:red;">F</span>S <br/> ----RS<span style="color:red;">L</span>S </td> 
+       <td> CGGTCCAGGTCCAGGTCC<span style="color:red;">T</span>TCTCC <br/> ------------AGGTCC<span style="color:red;">C</span>TCTCC </td> 
+       </tr> 
+      <tr>
+       <td> SSSRS <br/> SS-RS </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span>TCCAGAAGC <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span>---AGAAGC </td> 
+       <td class="td3"> SSSRS <br/> -SSRS </td> 
+       <td> TCCAGTTCCAGAAGC <br/> ---AGTTCCAGAAGC </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">E</span><span style="color:red;">Q</span>PRE <br/> <span style="color:red;">P</span><span style="color:red;">L</span>-RE </td> 
+       <td> <span style="color:red;">G</span><span style="color:red;">A</span>GC<span style="color:red;">A</span>GCCGCGGGAG <br/> <span style="color:red;">C</span><span style="color:red;">C</span>GC<span style="color:red;">T</span>G---CGGGAG </td> 
+       <td class="td3"> E<span style="color:red;">Q</span><span style="color:red;">P</span>RE <br/> -<span style="color:red;">P</span><span style="color:red;">L</span>RE </td> 
+       <td> GAGC<span style="color:red;">A</span>GC<span style="color:red;">C</span>GCGGGAG <br/> ---C<span style="color:red;">C</span>GC<span style="color:red;">T</span>GCGGGAG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">K</span>KDK<span style="color:red;">K</span><span style="color:red;">D</span> <br/> <span style="color:red;">A</span>K--<span style="color:red;">A</span><span style="color:red;">S</span> </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span>AA<span style="color:red;">A</span>GACAAG<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span> <br/> <span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>AA<span style="color:red;">G</span>------<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span> </td> 
+       <td class="td3"> KK<span style="color:red;">D</span>K<span style="color:red;">K</span><span style="color:red;">D</span> <br/> --<span style="color:red;">A</span>K<span style="color:red;">A</span><span style="color:red;">S</span> </td> 
+       <td> AAGAAAG<span style="color:red;">A</span>CAAG<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span> <br/> ------G<span style="color:red;">C</span>CAAG<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span> </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">T</span><span style="color:red;">S</span>GET <br/> <span style="color:red;">L</span><span style="color:red;">E</span>-ET </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">C</span>AGGAGAGACT <br/> <span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">A</span>A---GAGACT </td> 
+       <td class="td3"> T<span style="color:red;">S</span><span style="color:red;">G</span>ET <br/> -<span style="color:red;">L</span><span style="color:red;">E</span>ET </td> 
+       <td> ACTT<span style="color:red;">C</span><span style="color:red;">A</span>G<span style="color:red;">G</span>AGAGACT <br/> ---T<span style="color:red;">T</span><span style="color:red;">G</span>G<span style="color:red;">A</span>AGAGACT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span>LLQQ <br/> <span style="color:red;">L</span>L-QQ </td> 
+       <td> <span style="color:red;">T</span>TGCTGCTGCAGCAG <br/> <span style="color:red;">C</span>TGCTG---CAGCAG </td> 
+       <td class="td3"> MLLQQ <br/> -LLQQ </td> 
+       <td> TTGCTGCTGCAGCAG <br/> ---CTGCTGCAGCAG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">K</span><span style="color:red;">V</span>PSQ <br/> <span style="color:red;">G</span><span style="color:red;">L</span>-SQ </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span>T<span style="color:red;">C</span>CCGTC<span style="color:red;">T</span>CAG <br/> <span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>T<span style="color:red;">G</span>---TC<span style="color:red;">C</span>CAG </td> 
+       <td class="td3"> K<span style="color:red;">V</span><span style="color:red;">P</span>SQ <br/> -<span style="color:red;">G</span><span style="color:red;">L</span>SQ </td> 
+       <td> AAGG<span style="color:red;">T</span>CC<span style="color:red;">C</span>GTC<span style="color:red;">T</span>CAG <br/> ---G<span style="color:red;">G</span>CC<span style="color:red;">T</span>GTC<span style="color:red;">C</span>CAG </td> 
+       </tr> 
+      <tr>
+       <td> S<span style="color:red;">S</span>GRN <br/> S<span style="color:red;">D</span>-RN </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span>GGCAGGAAC <br/> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span>---AGGAAC </td> 
+       <td class="td3"> SS<span style="color:red;">G</span>RN <br/> -S<span style="color:red;">D</span>RN </td> 
+       <td> AGCTCTG<span style="color:red;">G</span>CAGGAAC <br/> ---TCTG<span style="color:red;">A</span>CAGGAAC </td> 
+       </tr> 
+      <tr>
+       <td> S<span style="color:red;">S</span>GDL <br/> S<span style="color:red;">E</span>-DL </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span>GGGGACTT<span style="color:red;">G</span> <br/> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span>---GACTT<span style="color:red;">A</span> </td> 
+       <td class="td3"> SS<span style="color:red;">G</span>DL <br/> -S<span style="color:red;">E</span>DL </td> 
+       <td> AGCTCTG<span style="color:red;">G</span>GGACTT<span style="color:red;">G</span> <br/> ---TCTG<span style="color:red;">A</span>GGACTT<span style="color:red;">A</span> </td> 
+       </tr> 
+      <tr>
+       <td> R<span style="color:red;">A</span>RP<span style="color:red;">T</span>R <br/> R<span style="color:red;">T</span>--<span style="color:red;">M</span>R </td> 
+       <td> <span style="color:red;">A</span>G<span style="color:red;">A</span><span style="color:red;">G</span>C<span style="color:red;">T</span>CGCCCAA<span style="color:red;">C</span>GAGA <br/> <span style="color:red;">C</span>G<span style="color:red;">C</span><span style="color:red;">A</span>C<span style="color:red;">A</span>------A<span style="color:red;">T</span>GAGA </td> 
+       <td class="td3"> RAR<span style="color:red;">P</span><span style="color:red;">T</span>R <br/> --R<span style="color:red;">T</span><span style="color:red;">M</span>R </td> 
+       <td> AGAGCTCGC<span style="color:red;">C</span>CAA<span style="color:red;">C</span>GAGA <br/> ------CGC<span style="color:red;">A</span>CAA<span style="color:red;">T</span>GAGA </td> 
+       </tr> 
+      <tr>
+       <td> S<span style="color:red;">L</span>DAR <br/> S<span style="color:red;">I</span>-AR </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span>T<span style="color:red;">G</span>GATGCCCGT <br/> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">A</span>T<span style="color:red;">T</span>---GCCCGT </td> 
+       <td class="td3"> S<span style="color:red;">L</span><span style="color:red;">D</span>AR <br/> -<span style="color:red;">S</span><span style="color:red;">I</span>AR </td> 
+       <td> AGCT<span style="color:red;">T</span>G<span style="color:red;">G</span><span style="color:red;">A</span>TGCCCGT <br/> ---T<span style="color:red;">C</span>G<span style="color:red;">A</span><span style="color:red;">T</span>TGCCCGT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">R</span><span style="color:red;">G</span>VPP <br/> <span style="color:red;">V</span><span style="color:red;">S</span>-PP </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span>GTGCC<span style="color:red;">T</span>CC<span style="color:red;">G</span> <br/> <span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">G</span>---CC<span style="color:red;">C</span>CC<span style="color:red;">A</span> </td> 
+       <td class="td3"> R<span style="color:red;">G</span><span style="color:red;">V</span>PP <br/> -<span style="color:red;">V</span><span style="color:red;">S</span>PP </td> 
+       <td> CGTG<span style="color:red;">G</span>C<span style="color:red;">G</span><span style="color:red;">T</span>GCC<span style="color:red;">T</span>CC<span style="color:red;">G</span> <br/> ---G<span style="color:red;">T</span>C<span style="color:red;">T</span><span style="color:red;">C</span>GCC<span style="color:red;">C</span>CC<span style="color:red;">A</span> </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">D</span><span style="color:red;">I</span>G<span style="color:red;">K</span>V <br/> <span style="color:red;">M</span><span style="color:red;">V</span>-<span style="color:red;">E</span>V </td> 
+       <td> <span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">A</span>T<span style="color:red;">A</span>GGC<span style="color:red;">A</span>A<span style="color:red;">G</span>GT<span style="color:red;">G</span> <br/> <span style="color:red;">A</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">G</span>T<span style="color:red;">T</span>---<span style="color:red;">G</span>A<span style="color:red;">A</span>GT<span style="color:red;">A</span> </td> 
+       <td class="td3"> D<span style="color:red;">I</span><span style="color:red;">G</span><span style="color:red;">K</span>V <br/> -<span style="color:red;">M</span><span style="color:red;">V</span><span style="color:red;">E</span>V </td> 
+       <td> GACAT<span style="color:red;">A</span>G<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span>A<span style="color:red;">G</span>GT<span style="color:red;">G</span> <br/> ---AT<span style="color:red;">G</span>G<span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">G</span>A<span style="color:red;">A</span>GT<span style="color:red;">A</span> </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">L</span>LAPLI <br/> <span style="color:red;">A</span>L--LI </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">C</span>CT<span style="color:red;">G</span>GCTCCACTGATC <br/> <span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span>CT<span style="color:red;">A</span>------CTGATC </td> 
+       <td class="td3"> LLA<span style="color:red;">P</span>LI <br/> --A<span style="color:red;">L</span>LI </td> 
+       <td> CTCCTGGCTC<span style="color:red;">C</span>ACTGATC <br/> ------GCTC<span style="color:red;">T</span>ACTGATC </td> 
+       </tr> 
+      <tr>
+       <td> SSPQG <br/> SS-QG </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span>CCCCCAGGG<span style="color:red;">A</span> <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">C</span>C---CAGGG<span style="color:red;">G</span> </td> 
+       <td class="td3"> SS<span style="color:red;">P</span>QG <br/> -S<span style="color:red;">S</span>QG </td> 
+       <td> TCGAG<span style="color:red;">C</span><span style="color:red;">C</span>CCCAGGG<span style="color:red;">A</span> <br/> ---AG<span style="color:red;">T</span><span style="color:red;">T</span>CCCAGGG<span style="color:red;">G</span> </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span>LLLLG <br/> <span style="color:red;">L</span>L--LG </td> 
+       <td> <span style="color:red;">T</span>TGCT<span style="color:red;">C</span>CTGCTGCT<span style="color:red;">C</span>GGG <br/> <span style="color:red;">C</span>TGCT<span style="color:red;">G</span>------CT<span style="color:red;">T</span>GGG </td> 
+       <td class="td3"> MLLLLG <br/> --LLLG </td> 
+       <td> TTGCTCCTGCTGCT<span style="color:red;">C</span>GGG <br/> ------CTGCTGCT<span style="color:red;">T</span>GGG </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">R</span><span style="color:red;">M</span>VLHS <br/> <span style="color:red;">E</span><span style="color:red;">A</span>--HS </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">T</span><span style="color:red;">G</span>GTCTTACA<span style="color:red;">T</span>TC<span style="color:red;">A</span> <br/> <span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span>------CA<span style="color:red;">C</span>TC<span style="color:red;">G</span> </td> 
+       <td class="td3"> RM<span style="color:red;">V</span><span style="color:red;">L</span>HS <br/> --<span style="color:red;">E</span><span style="color:red;">A</span>HS </td> 
+       <td> CGGATGG<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span>ACA<span style="color:red;">T</span>TC<span style="color:red;">A</span> <br/> ------G<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>ACA<span style="color:red;">C</span>TC<span style="color:red;">G</span> </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">N</span>VIDP <br/> <span style="color:red;">A</span>V-DP </td> 
+       <td> <span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">T</span>GT<span style="color:red;">C</span>ATTGA<span style="color:red;">T</span>CCC <br/> <span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>GT<span style="color:red;">G</span>---GA<span style="color:red;">C</span>CCC </td> 
+       <td class="td3"> N<span style="color:red;">V</span><span style="color:red;">I</span>DP <br/> -<span style="color:red;">A</span><span style="color:red;">V</span>DP </td> 
+       <td> AATG<span style="color:red;">T</span>C<span style="color:red;">A</span>T<span style="color:red;">T</span>GA<span style="color:red;">T</span>CCC <br/> ---G<span style="color:red;">C</span>C<span style="color:red;">G</span>T<span style="color:red;">G</span>GA<span style="color:red;">C</span>CCC </td> 
+       </tr> 
+      <tr>
+       <td> S<span style="color:red;">K</span>FSNDD <br/> S<span style="color:red;">R</span>---DD </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">C</span>C<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span>TTCAGTAATGATGAC <br/> <span style="color:red;">A</span><span style="color:red;">G</span>C<span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">T</span>---------GATGAC </td> 
+       <td class="td3"> SKFS<span style="color:red;">N</span>DD <br/> ---S<span style="color:red;">R</span>DD </td> 
+       <td> TCCAAGTTCAG<span style="color:red;">T</span><span style="color:red;">A</span><span style="color:red;">A</span>TGATGAC <br/> ---------AG<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">G</span>TGATGAC </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">Q</span>KSDGS <br/> <span style="color:red;">S</span>K--GS </td> 
+       <td> <span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span>AAGTCTGATGGTTCT <br/> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span>AAG------GGTTCT </td> 
+       <td class="td3"> QKS<span style="color:red;">D</span>GS <br/> --S<span style="color:red;">K</span>GS </td> 
+       <td> CAAAAGTCT<span style="color:red;">G</span>A<span style="color:red;">T</span>GGTTCT <br/> ------TCT<span style="color:red;">A</span>A<span style="color:red;">G</span>GGTTCT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span>LLDD <br/> <span style="color:red;">L</span>L-DD </td> 
+       <td> <span style="color:red;">C</span>TGTT<span style="color:red;">G</span>TTAGATGAT <br/> <span style="color:red;">T</span>TGTT<span style="color:red;">A</span>---GATGAT </td> 
+       <td class="td3"> MLLDD <br/> -LLDD </td> 
+       <td> CTGTTGTTAGATGAT <br/> ---TTGTTAGATGAT </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">C</span><span style="color:red;">Q</span>LLV <br/> <span style="color:red;">L</span><span style="color:red;">E</span>-LV </td> 
+       <td> <span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>AGCTGTTGGTC <br/> <span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">G</span>AG---TTGGTC </td> 
+       <td class="td3"> C<span style="color:red;">Q</span><span style="color:red;">L</span>LV <br/> -<span style="color:red;">L</span><span style="color:red;">E</span>LV </td> 
+       <td> TGCC<span style="color:red;">A</span>G<span style="color:red;">C</span><span style="color:red;">T</span>GTTGGTC <br/> ---C<span style="color:red;">T</span>G<span style="color:red;">G</span><span style="color:red;">A</span>GTTGGTC </td> 
+       </tr> 
+      <tr>
+       <td> <span style="color:red;">E</span>EETGKS <br/> <span style="color:red;">T</span>E---KS </td> 
+       <td> <span style="color:red;">G</span><span style="color:red;">A</span>AGA<span style="color:red;">G</span>GAAACAGGGAAGTCA <br/> <span style="color:red;">A</span><span style="color:red;">C</span>AGA<span style="color:red;">A</span>---------AAGTCA </td> 
+       <td class="td3"> EEET<span style="color:red;">G</span>KS <br/> ---T<span style="color:red;">E</span>KS </td> 
+       <td> GAAGAGGAAACAG<span style="color:red;">G</span><span style="color:red;">G</span>AAGTCA <br/> ---------ACAG<span style="color:red;">A</span><span style="color:red;">A</span>AAGTCA </td> 
+       </tr> 
+   </table>
+    <div style="clear:both; margin: 50px"></div>   
+    <table align="center">
+      <tr>
+        <th></th>
+        <th>Original Alignment</th>
+        <th></th>
+        <th>Better Alignment</th>
+      </tr> 
+      <tr>
+       <td> M<span style="color:red;">F</span>GG<span style="color:red;">K</span> <br/> M<span style="color:red;">L</span>-G<span style="color:red;">R</span> </td> 
+     <td> ATGTT<span style="color:red;">T</span>GGTGG<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">A</span> <br/> ATGTT<span style="color:red;">A</span>---GG<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> M<span style="color:red;">F</span>G<span style="color:red;">G</span>K <br/> M<span style="color:red;">L</span>G<span style="color:red;">R</span>- </td> 
+     <td> ATGTT<span style="color:red;">T</span>GG<span style="color:red;">T</span><span style="color:red;">G</span>GGAAA <br/> ATGTT<span style="color:red;">A</span>GG<span style="color:red;">C</span><span style="color:red;">C</span>GG--- </td> 
+     </tr> 
+      <tr>
+       <td> S<span style="color:red;">F</span>A<span style="color:red;">F</span><span style="color:red;">W</span> <br/> S<span style="color:red;">M</span>-<span style="color:red;">L</span><span style="color:red;">V</span> </td> 
+     <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span>T<span style="color:red;">T</span>GCA<span style="color:red;">T</span>T<span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">G</span> <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">A</span>T<span style="color:red;">G</span>---<span style="color:red;">C</span>T<span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> S<span style="color:red;">F</span><span style="color:red;">A</span><span style="color:red;">F</span>W <br/> S<span style="color:red;">M</span><span style="color:red;">L</span><span style="color:red;">V</span>- </td> 
+     <td> <span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span>T<span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">T</span>TCTGG <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">A</span>T<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">G</span>TC--- </td> 
+     </tr> 
+      <tr>
+       <td> C<span style="color:red;">G</span>L<span style="color:red;">E</span><span style="color:red;">D</span> <br/> C<span style="color:red;">E</span>-<span style="color:red;">H</span><span style="color:red;">G</span> </td> 
+     <td> TGTG<span style="color:red;">G</span>ACTT<span style="color:red;">G</span>A<span style="color:red;">A</span>G<span style="color:red;">A</span><span style="color:red;">C</span> <br/> TGTG<span style="color:red;">A</span>A---<span style="color:red;">C</span>A<span style="color:red;">T</span>G<span style="color:red;">G</span><span style="color:red;">A</span> </td> 
+     <td class="td3"> C<span style="color:red;">G</span><span style="color:red;">L</span><span style="color:red;">E</span>D <br/> C<span style="color:red;">E</span><span style="color:red;">H</span><span style="color:red;">G</span>- </td> 
+     <td> TGTG<span style="color:red;">G</span>AC<span style="color:red;">T</span>TG<span style="color:red;">A</span>AGAC <br/> TGTG<span style="color:red;">A</span>AC<span style="color:red;">A</span>TG<span style="color:red;">G</span>A--- </td> 
+     </tr> 
+      <tr>
+       <td> GEEAEA <br/> GE--EA </td> 
+     <td> GGAGAAGAAGCCGAAGC<span style="color:red;">A</span> <br/> GGAGAA------GAAGC<span style="color:red;">C</span> </td> 
+     <td class="td3"> GEEAEA <br/> GEEA-- </td> 
+     <td> GGAGAAGAAGCCGAAGCA <br/> GGAGAAGAAGCC------ </td> 
+     </tr> 
+      <tr>
+       <td> DDEEE <br/> DD-EE </td> 
+     <td> GACGACGAGGAGGA<span style="color:red;">A</span> <br/> GACGAC---GAGGA<span style="color:red;">G</span> </td> 
+     <td class="td3"> DDEEE <br/> DDEE- </td> 
+     <td> GACGACGAGGAGGAA <br/> GACGACGAGGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> EVKVKV <br/> EV--KV </td> 
+     <td> GAAGTAAAAGTTAAAGT<span style="color:red;">C</span> <br/> GAAGTA------AAAGT<span style="color:red;">T</span> </td> 
+     <td class="td3"> EVKVKV <br/> EVKV-- </td> 
+     <td> GAAGTAAAAGTTAAAGTC <br/> GAAGTAAAAGTT------ </td> 
+     </tr> 
+      <tr>
+       <td> VSSSS <br/> VS-SS </td> 
+     <td> GTCTCCAGCAGCAG<span style="color:red;">T</span> <br/> GTCTCC---AGCAG<span style="color:red;">C</span> </td> 
+     <td class="td3"> VSSSS <br/> VSSS- </td> 
+     <td> GTCTCCAGCAGCAGT <br/> GTCTCCAGCAGC--- </td> 
+     </tr> 
+      <tr>
+       <td> G<span style="color:red;">S</span>F<span style="color:red;">S</span><span style="color:red;">S</span> <br/> G<span style="color:red;">R</span>-<span style="color:red;">D</span><span style="color:red;">F</span> </td> 
+     <td> GGAAG<span style="color:red;">T</span>TTT<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span>T<span style="color:red;">C</span><span style="color:red;">A</span> <br/> GGAAG<span style="color:red;">G</span>---<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">T</span>T<span style="color:red;">T</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> G<span style="color:red;">S</span><span style="color:red;">F</span><span style="color:red;">S</span>S <br/> G<span style="color:red;">R</span><span style="color:red;">D</span><span style="color:red;">F</span>- </td> 
+     <td> GGAAG<span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">T</span>TT<span style="color:red;">C</span>CTCA <br/> GGAAG<span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">A</span>TT<span style="color:red;">T</span>C--- </td> 
+     </tr> 
+      <tr>
+       <td> PGEDS<span style="color:red;">R</span>D <br/> PG---<span style="color:red;">K</span>D </td> 
+     <td> CC<span style="color:red;">C</span>GGAGAGGACAGC<span style="color:red;">C</span><span style="color:red;">G</span>GGA<span style="color:red;">T</span> <br/> CC<span style="color:red;">T</span>GGA---------<span style="color:red;">A</span><span style="color:red;">A</span>GGA<span style="color:red;">C</span> </td> 
+     <td class="td3"> PG<span style="color:red;">E</span>DSRD <br/> PG<span style="color:red;">K</span>D--- </td> 
+     <td> CC<span style="color:red;">C</span>GGA<span style="color:red;">G</span>AGGACAGCCGGGAT <br/> CC<span style="color:red;">T</span>GGA<span style="color:red;">A</span>AGGAC--------- </td> 
+     </tr> 
+      <tr>
+       <td> KEVE<span style="color:red;">G</span> <br/> KE-E<span style="color:red;">K</span> </td> 
+     <td> AAAGAGGTGGAG<span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">T</span> <br/> AAAGAG---GAG<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> KE<span style="color:red;">V</span><span style="color:red;">E</span>G <br/> KE<span style="color:red;">E</span><span style="color:red;">K</span>- </td> 
+     <td> AAAGAGG<span style="color:red;">T</span>G<span style="color:red;">G</span>AGGGT <br/> AAAGAGG<span style="color:red;">A</span>G<span style="color:red;">A</span>AG--- </td> 
+     </tr> 
+      <tr>
+       <td> K<span style="color:red;">S</span>KD<span style="color:red;">X</span><span style="color:red;">X</span> <br/> K<span style="color:red;">A</span>--<span style="color:red;">K</span><span style="color:red;">N</span> </td> 
+     <td> AAG<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>AAGGAC<span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span> <br/> AAG<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span>------<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> K<span style="color:red;">S</span>K<span style="color:red;">D</span>XX <br/> K<span style="color:red;">A</span>K<span style="color:red;">N</span>-- </td> 
+     <td> AAG<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>AAG<span style="color:red;">G</span>ACNNNNNN <br/> AAG<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span>AAG<span style="color:red;">A</span>AC------ </td> 
+     </tr> 
+      <tr>
+       <td> CSSSS <br/> CS-SS </td> 
+     <td> TGTAGCAGCAGCAG<span style="color:red;">T</span> <br/> TGTAGC---AGCAG<span style="color:red;">C</span> </td> 
+     <td class="td3"> CSSSS <br/> CSSS- </td> 
+     <td> TGTAGCAGCAGCAGT <br/> TGTAGCAGCAGC--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">A</span>QEEE <br/> <span style="color:red;">S</span>Q-EE </td> 
+     <td> <span style="color:red;">G</span>CCCA<span style="color:red;">A</span>GAAGA<span style="color:red;">G</span>GA<span style="color:red;">A</span> <br/> <span style="color:red;">T</span>CCCA<span style="color:red;">G</span>---GA<span style="color:red;">A</span>GA<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">A</span>QEEE <br/> <span style="color:red;">S</span>QEE- </td> 
+     <td> <span style="color:red;">G</span>CCCA<span style="color:red;">A</span>GAAGAGGAA <br/> <span style="color:red;">T</span>CCCA<span style="color:red;">G</span>GAAGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span>LLLL <br/> <span style="color:red;">L</span>L-LL </td> 
+     <td> TTGCTGCTGCTGCT<span style="color:red;">C</span> <br/> TTGCTG---CTGCT<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">M</span>LLLL <br/> <span style="color:red;">L</span>LLL- </td> 
+     <td> TTGCTGCTGCTGCTC <br/> TTGCTGCTGCTG--- </td> 
+     </tr> 
+      <tr>
+       <td> TDLPP<span style="color:red;">A</span><span style="color:red;">S</span> <br/> TD---<span style="color:red;">S</span><span style="color:red;">Q</span> </td> 
+     <td> AC<span style="color:red;">C</span>GATCTTCCGCCT<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span> <br/> AC<span style="color:red;">A</span>GAT---------<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> TD<span style="color:red;">L</span><span style="color:red;">P</span>PAS <br/> TD<span style="color:red;">S</span><span style="color:red;">Q</span>--- </td> 
+     <td> AC<span style="color:red;">C</span>GAT<span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span>C<span style="color:red;">C</span>GCCTGCTTCT <br/> AC<span style="color:red;">A</span>GAT<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>C<span style="color:red;">A</span>G--------- </td> 
+     </tr> 
+      <tr>
+       <td> SATTTTT <br/> SA---TT </td> 
+     <td> TCTGCCACCACCACCAC<span style="color:red;">T</span>AC<span style="color:red;">T</span> <br/> TCTGCC---------AC<span style="color:red;">C</span>AC<span style="color:red;">C</span> </td> 
+     <td class="td3"> SATTTTT <br/> SATT--- </td> 
+     <td> TCTGCCACCACCACCACTACT <br/> TCTGCCACCACC--------- </td> 
+     </tr> 
+      <tr>
+       <td> PATAATP<span style="color:red;">T</span> <br/> PA----P<span style="color:red;">A</span> </td> 
+     <td> CCTGCCACAGCCGCTACCCCA<span style="color:red;">A</span>C<span style="color:red;">T</span> <br/> CCTGCC------------CCA<span style="color:red;">G</span>C<span style="color:red;">C</span> </td> 
+     <td class="td3"> PA<span style="color:red;">T</span>AATPT <br/> PA<span style="color:red;">P</span>A---- </td> 
+     <td> CCTGCC<span style="color:red;">A</span>CAGCCGCTACCCCAACT <br/> CCTGCC<span style="color:red;">C</span>CAGCC------------ </td> 
+     </tr> 
+      <tr>
+       <td> QPAAA <br/> QP-AA </td> 
+     <td> CAGCC<span style="color:red;">G</span>GCGGCGGC<span style="color:red;">A</span> <br/> CAGCC<span style="color:red;">A</span>---GCGGC<span style="color:red;">G</span> </td> 
+     <td class="td3"> QPAAA <br/> QPAA- </td> 
+     <td> CAGCC<span style="color:red;">G</span>GCGGCGGCA <br/> CAGCC<span style="color:red;">A</span>GCGGCG--- </td> 
+     </tr> 
+      <tr>
+       <td> EAIG<span style="color:red;">S</span>G <br/> EA--<span style="color:red;">T</span>G </td> 
+     <td> GAGGCAATAGGG<span style="color:red;">T</span>C<span style="color:red;">G</span>GG<span style="color:red;">A</span> <br/> GAGGCA------<span style="color:red;">A</span>C<span style="color:red;">A</span>GG<span style="color:red;">G</span> </td> 
+     <td class="td3"> EA<span style="color:red;">I</span>GSG <br/> EA<span style="color:red;">T</span>G-- </td> 
+     <td> GAGGCAA<span style="color:red;">T</span>AGGGTCGGGA <br/> GAGGCAA<span style="color:red;">C</span>AGGG------ </td> 
+     </tr> 
+      <tr>
+       <td> ESD<span style="color:red;">T</span><span style="color:red;">A</span> <br/> ES-<span style="color:red;">I</span><span style="color:red;">L</span> </td> 
+     <td> GAATCCGACA<span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span> <br/> GAATCC---A<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> ES<span style="color:red;">D</span><span style="color:red;">T</span>A <br/> ES<span style="color:red;">I</span><span style="color:red;">L</span>- </td> 
+     <td> GAATCC<span style="color:red;">G</span><span style="color:red;">A</span>C<span style="color:red;">A</span><span style="color:red;">C</span>GGCA <br/> GAATCC<span style="color:red;">A</span><span style="color:red;">T</span>C<span style="color:red;">C</span><span style="color:red;">T</span>G--- </td> 
+     </tr> 
+      <tr>
+       <td> K<span style="color:red;">S</span>KKK <br/> K<span style="color:red;">P</span>-KK </td> 
+     <td> AAA<span style="color:red;">T</span>CTAAGAAGAA<span style="color:red;">A</span> <br/> AAA<span style="color:red;">C</span>CT---AAGAA<span style="color:red;">G</span> </td> 
+     <td class="td3"> K<span style="color:red;">S</span>KKK <br/> K<span style="color:red;">P</span>KK- </td> 
+     <td> AAA<span style="color:red;">T</span>CTAAGAAGAAA <br/> AAA<span style="color:red;">C</span>CTAAGAAG--- </td> 
+     </tr> 
+      <tr>
+       <td> QPQPQP <br/> QP--QP </td> 
+     <td> CAGCC<span style="color:red;">G</span>CAGCCTCAGCC<span style="color:red;">A</span> <br/> CAGCC<span style="color:red;">C</span>------CAGCC<span style="color:red;">T</span> </td> 
+     <td class="td3"> QPQPQP <br/> QPQP-- </td> 
+     <td> CAGCC<span style="color:red;">G</span>CAGCCTCAGCCA <br/> CAGCC<span style="color:red;">C</span>CAGCCT------ </td> 
+     </tr> 
+      <tr>
+       <td> GLPT<span style="color:red;">Q</span> <br/> GL-T<span style="color:red;">A</span> </td> 
+     <td> GGATTGCCAAC<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span> <br/> GGATTG---AC<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span> </td> 
+     <td class="td3"> GL<span style="color:red;">P</span><span style="color:red;">T</span>Q <br/> GL<span style="color:red;">T</span><span style="color:red;">A</span>- </td> 
+     <td> GGATTG<span style="color:red;">C</span>CA<span style="color:red;">A</span>CTCAA <br/> GGATTG<span style="color:red;">A</span>CA<span style="color:red;">G</span>CT--- </td> 
+     </tr> 
+      <tr>
+       <td> TGTQEATQ <br/> TG----TQ </td> 
+     <td> ACCGGGACCCAGGAGGCGACCCA<span style="color:red;">A</span> <br/> ACCGGG------------ACCCA<span style="color:red;">G</span> </td> 
+     <td class="td3"> TGTQEATQ <br/> TGTQ---- </td> 
+     <td> ACCGGGACCCAGGAGGCGACCCAA <br/> ACCGGGACCCAG------------ </td> 
+     </tr> 
+      <tr>
+       <td> EEEEE <br/> EE-EE </td> 
+     <td> GAGGAGGAGGAGGA<span style="color:red;">A</span> <br/> GAGGAG---GAGGA<span style="color:red;">G</span> </td> 
+     <td class="td3"> EEEEE <br/> EEEE- </td> 
+     <td> GAGGAGGAGGAGGAA <br/> GAGGAGGAGGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> SSL<span style="color:red;">P</span>P <br/> SS-<span style="color:red;">Q</span>P </td> 
+     <td> TCTTCCCTGC<span style="color:red;">C</span><span style="color:red;">T</span>CC<span style="color:red;">A</span> <br/> TCTTCC---C<span style="color:red;">A</span><span style="color:red;">G</span>CC<span style="color:red;">T</span> </td> 
+     <td class="td3"> SS<span style="color:red;">L</span>PP <br/> SS<span style="color:red;">Q</span>P- </td> 
+     <td> TCTTCCC<span style="color:red;">T</span>GCCTCCA <br/> TCTTCCC<span style="color:red;">A</span>GCCT--- </td> 
+     </tr> 
+      <tr>
+       <td> CWNLSL <br/> CW--SL </td> 
+     <td> TGCTGGAACCTG<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span>CT<span style="color:red;">A</span> <br/> TGCTGG------<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>CT<span style="color:red;">G</span> </td> 
+     <td class="td3"> CW<span style="color:red;">N</span>LSL <br/> CW<span style="color:red;">S</span>L-- </td> 
+     <td> TGCTGGA<span style="color:red;">A</span>CCTGTCTCTA <br/> TGCTGGA<span style="color:red;">G</span>CCTG------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">Q</span>AGKE<span style="color:red;">G</span> <br/> <span style="color:red;">E</span>A--E<span style="color:red;">E</span> </td> 
+     <td> <span style="color:red;">C</span>AGGCAGGAAAGGA<span style="color:red;">G</span>G<span style="color:red;">G</span><span style="color:red;">A</span> <br/> <span style="color:red;">G</span>AGGCA------GA<span style="color:red;">A</span>G<span style="color:red;">A</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">Q</span>A<span style="color:red;">G</span><span style="color:red;">K</span>EG <br/> <span style="color:red;">E</span>A<span style="color:red;">E</span><span style="color:red;">E</span>-- </td> 
+     <td> <span style="color:red;">C</span>AGGCAG<span style="color:red;">G</span>A<span style="color:red;">A</span>AGGAGGGA <br/> <span style="color:red;">G</span>AGGCAG<span style="color:red;">A</span>A<span style="color:red;">G</span>AG------ </td> 
+     </tr> 
+      <tr>
+       <td> TSNLSNL <br/> TS---NL </td> 
+     <td> ACATCGAACTTATCGAAC<span style="color:red;">C</span>T<span style="color:red;">C</span> <br/> ACATCG---------AAC<span style="color:red;">T</span>T<span style="color:red;">A</span> </td> 
+     <td class="td3"> TSNLSNL <br/> TSNL--- </td> 
+     <td> ACATCGAACTTATCGAACCTC <br/> ACATCGAACTTA--------- </td> 
+     </tr> 
+      <tr>
+       <td> P<span style="color:red;">S</span>RE<span style="color:red;">P</span> <br/> P<span style="color:red;">P</span>-E<span style="color:red;">E</span> </td> 
+     <td> CCT<span style="color:red;">T</span>C<span style="color:red;">C</span>AGGGAG<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span> <br/> CCT<span style="color:red;">C</span>C<span style="color:red;">A</span>---GAG<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> P<span style="color:red;">S</span><span style="color:red;">R</span>EP <br/> P<span style="color:red;">P</span><span style="color:red;">E</span>E- </td> 
+     <td> CCT<span style="color:red;">T</span>C<span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span>GGAGCCT <br/> CCT<span style="color:red;">C</span>C<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">A</span>GGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> EEEEENEE <br/> EE----EE </td> 
+     <td> GAGGA<span style="color:red;">G</span>GAAGAGGAAAATGA<span style="color:red;">G</span>GA<span style="color:red;">A</span> <br/> GAGGA<span style="color:red;">A</span>------------GA<span style="color:red;">A</span>GA<span style="color:red;">G</span> </td> 
+     <td class="td3"> EEEEENEE <br/> EEEE---- </td> 
+     <td> GAGGA<span style="color:red;">G</span>GAAGAGGAAAATGAGGAA <br/> GAGGA<span style="color:red;">A</span>GAAGAG------------ </td> 
+     </tr> 
+      <tr>
+       <td> HWVR<span style="color:red;">R</span>R <br/> HW--<span style="color:red;">Y</span>R </td> 
+     <td> CACTGGGTCCGC<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span>CG<span style="color:red;">A</span> <br/> CACTGG------<span style="color:red;">T</span><span style="color:red;">A</span><span style="color:red;">C</span>CG<span style="color:red;">C</span> </td> 
+     <td class="td3"> HW<span style="color:red;">V</span>RRR <br/> HW<span style="color:red;">Y</span>R-- </td> 
+     <td> CACTGG<span style="color:red;">G</span><span style="color:red;">T</span>CCGCAGGCGA <br/> CACTGG<span style="color:red;">T</span><span style="color:red;">A</span>CCGC------ </td> 
+     </tr> 
+      <tr>
+       <td> PGLLL <br/> PG-LL </td> 
+     <td> CCAGGGCTACT<span style="color:red;">T</span>CT<span style="color:red;">A</span> <br/> CCAGGG---CT<span style="color:red;">C</span>CT<span style="color:red;">T</span> </td> 
+     <td class="td3"> PGLLL <br/> PGLL- </td> 
+     <td> CCAGGGCT<span style="color:red;">A</span>CTTCTA <br/> CCAGGGCT<span style="color:red;">C</span>CTT--- </td> 
+     </tr> 
+      <tr>
+       <td> KDGPG<span style="color:red;">K</span><span style="color:red;">A</span> <br/> KD---<span style="color:red;">E</span><span style="color:red;">L</span> </td> 
+     <td> AAAGATGGGCCGGGA<span style="color:red;">A</span>AG<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span> <br/> AAAGAT---------<span style="color:red;">G</span>AG<span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> KD<span style="color:red;">G</span><span style="color:red;">P</span>GKA <br/> KD<span style="color:red;">E</span><span style="color:red;">L</span>--- </td> 
+     <td> AAAGATG<span style="color:red;">G</span>GC<span style="color:red;">C</span>GGGAAAGGCT <br/> AAAGATG<span style="color:red;">A</span>GC<span style="color:red;">T</span>G--------- </td> 
+     </tr> 
+      <tr>
+       <td> MQQQQ <br/> MQ-QQ </td> 
+     <td> ATGCA<span style="color:red;">G</span>CAGCAGCA<span style="color:red;">A</span> <br/> ATGCA<span style="color:red;">A</span>---CAGCA<span style="color:red;">G</span> </td> 
+     <td class="td3"> MQQQQ <br/> MQQQ- </td> 
+     <td> ATGCA<span style="color:red;">G</span>CAGCAGCAA <br/> ATGCA<span style="color:red;">A</span>CAGCAG--- </td> 
+     </tr> 
+      <tr>
+       <td> RCMK<span style="color:red;">Q</span> <br/> RC-K<span style="color:red;">E</span> </td> 
+     <td> AGATGTATGAA<span style="color:red;">A</span><span style="color:red;">C</span>A<span style="color:red;">G</span> <br/> AGATGT---AA<span style="color:red;">G</span><span style="color:red;">G</span>A<span style="color:red;">A</span> </td> 
+     <td class="td3"> RC<span style="color:red;">M</span><span style="color:red;">K</span>Q <br/> RC<span style="color:red;">K</span><span style="color:red;">E</span>- </td> 
+     <td> AGATGTA<span style="color:red;">T</span>G<span style="color:red;">A</span>AACAG <br/> AGATGTA<span style="color:red;">A</span>G<span style="color:red;">G</span>AA--- </td> 
+     </tr> 
+      <tr>
+       <td> G<span style="color:red;">A</span>V<span style="color:red;">G</span><span style="color:red;">R</span> <br/> G<span style="color:red;">S</span>-<span style="color:red;">S</span><span style="color:red;">E</span> </td> 
+     <td> GG<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span>GTG<span style="color:red;">G</span>G<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">A</span> <br/> GG<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>---<span style="color:red;">A</span>G<span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> G<span style="color:red;">A</span><span style="color:red;">V</span><span style="color:red;">G</span>R <br/> G<span style="color:red;">S</span><span style="color:red;">S</span><span style="color:red;">E</span>- </td> 
+     <td> GG<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">G</span>G<span style="color:red;">G</span>GAGA <br/> GG<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span>G<span style="color:red;">A</span>G--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">T</span>ETTT <br/> <span style="color:red;">A</span>E-TT </td> 
+     <td> <span style="color:red;">A</span>CTGAGACAACAAC<span style="color:red;">G</span> <br/> <span style="color:red;">G</span>CTGAG---ACAAC<span style="color:red;">A</span> </td> 
+     <td class="td3"> <span style="color:red;">T</span>ETTT <br/> <span style="color:red;">A</span>ETT- </td> 
+     <td> <span style="color:red;">A</span>CTGAGACAACAACG <br/> <span style="color:red;">G</span>CTGAGACAACA--- </td> 
+     </tr> 
+      <tr>
+       <td> EEAEE <br/> EE-EE </td> 
+     <td> GA<span style="color:red;">G</span>GAGGCAGA<span style="color:red;">G</span>GA<span style="color:red;">A</span> <br/> GA<span style="color:red;">A</span>GAG---GA<span style="color:red;">A</span>GA<span style="color:red;">G</span> </td> 
+     <td class="td3"> EE<span style="color:red;">A</span>EE <br/> EE<span style="color:red;">E</span>E- </td> 
+     <td> GA<span style="color:red;">G</span>GAGG<span style="color:red;">C</span>AGAGGAA <br/> GA<span style="color:red;">A</span>GAGG<span style="color:red;">A</span>AGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> C<span style="color:red;">K</span>DTV<span style="color:red;">X</span><span style="color:red;">X</span> <br/> C<span style="color:red;">R</span>---<span style="color:red;">E</span><span style="color:red;">T</span> </td> 
+     <td> TGC<span style="color:red;">A</span><span style="color:red;">A</span>AGATACCGTT<span style="color:red;">C</span>A<span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span><span style="color:red;">N</span> <br/> TGC<span style="color:red;">C</span><span style="color:red;">G</span>A---------<span style="color:red;">G</span>A<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> C<span style="color:red;">K</span><span style="color:red;">D</span>TVXX <br/> C<span style="color:red;">R</span><span style="color:red;">E</span>T--- </td> 
+     <td> TGC<span style="color:red;">A</span><span style="color:red;">A</span>AGA<span style="color:red;">T</span>ACCGTTCANNNN <br/> TGC<span style="color:red;">C</span><span style="color:red;">G</span>AGA<span style="color:red;">G</span>ACC--------- </td> 
+     </tr> 
+      <tr>
+       <td> THRDRD <br/> TH--RD </td> 
+     <td> ACACA<span style="color:red;">T</span>AGAGATAGAGA<span style="color:red;">C</span> <br/> ACACA<span style="color:red;">C</span>------AGAGA<span style="color:red;">T</span> </td> 
+     <td class="td3"> THRDRD <br/> THRD-- </td> 
+     <td> ACACA<span style="color:red;">T</span>AGAGATAGAGAC <br/> ACACA<span style="color:red;">C</span>AGAGAT------ </td> 
+     </tr> 
+      <tr>
+       <td> YDI<span style="color:red;">A</span><span style="color:red;">N</span> <br/> YD-<span style="color:red;">N</span><span style="color:red;">T</span> </td> 
+     <td> TA<span style="color:red;">C</span>GACATC<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span>A<span style="color:red;">A</span><span style="color:red;">C</span> <br/> TA<span style="color:red;">T</span>GAC---<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">C</span>A<span style="color:red;">C</span><span style="color:red;">T</span> </td> 
+     <td class="td3"> YD<span style="color:red;">I</span><span style="color:red;">A</span>N <br/> YD<span style="color:red;">N</span><span style="color:red;">T</span>- </td> 
+     <td> TA<span style="color:red;">C</span>GACA<span style="color:red;">T</span>C<span style="color:red;">G</span>CTAAC <br/> TA<span style="color:red;">T</span>GACA<span style="color:red;">A</span>C<span style="color:red;">A</span>CT--- </td> 
+     </tr> 
+      <tr>
+       <td> PNTP<span style="color:red;">T</span><span style="color:red;">T</span> <br/> PN--<span style="color:red;">A</span><span style="color:red;">S</span> </td> 
+     <td> CCAAACACGCCA<span style="color:red;">A</span>C<span style="color:red;">C</span><span style="color:red;">A</span>C<span style="color:red;">G</span> <br/> CCAAAC------<span style="color:red;">G</span>C<span style="color:red;">A</span><span style="color:red;">T</span>C<span style="color:red;">A</span> </td> 
+     <td class="td3"> PN<span style="color:red;">T</span><span style="color:red;">P</span>TT <br/> PN<span style="color:red;">A</span><span style="color:red;">S</span>-- </td> 
+     <td> CCAAAC<span style="color:red;">A</span>C<span style="color:red;">G</span><span style="color:red;">C</span>CAACCACG <br/> CCAAAC<span style="color:red;">G</span>C<span style="color:red;">A</span><span style="color:red;">T</span>CA------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">R</span><span style="color:red;">V</span>YP<span style="color:red;">W</span>P <br/> <span style="color:red;">W</span><span style="color:red;">I</span>--<span style="color:red;">C</span>P </td> 
+     <td> <span style="color:red;">A</span>GG<span style="color:red;">G</span>TATACCCTTG<span style="color:red;">G</span>CC<span style="color:red;">A</span> <br/> <span style="color:red;">T</span>GG<span style="color:red;">A</span>TA------TG<span style="color:red;">C</span>CC<span style="color:red;">T</span> </td> 
+     <td class="td3"> <span style="color:red;">R</span><span style="color:red;">V</span><span style="color:red;">Y</span>PWP <br/> <span style="color:red;">W</span><span style="color:red;">I</span><span style="color:red;">C</span>P-- </td> 
+     <td> <span style="color:red;">A</span>GG<span style="color:red;">G</span>TAT<span style="color:red;">A</span>CCCTTGGCCA <br/> <span style="color:red;">T</span>GG<span style="color:red;">A</span>TAT<span style="color:red;">G</span>CCCT------ </td> 
+     </tr> 
+      <tr>
+       <td> PPPPPP <br/> PP--PP </td> 
+     <td> CCACCCCCACCCCCACC<span style="color:red;">A</span> <br/> CCACCC------CCACC<span style="color:red;">C</span> </td> 
+     <td class="td3"> PPPPPP <br/> PPPP-- </td> 
+     <td> CCACCCCCACCCCCACCA <br/> CCACCCCCACCC------ </td> 
+     </tr> 
+      <tr>
+       <td> AAAAA <br/> AA-AA </td> 
+     <td> GC<span style="color:red;">A</span>GCGGCGGC<span style="color:red;">A</span>GC<span style="color:red;">G</span> <br/> GC<span style="color:red;">G</span>GCG---GC<span style="color:red;">G</span>GC<span style="color:red;">A</span> </td> 
+     <td class="td3"> AAAAA <br/> AAAA- </td> 
+     <td> GC<span style="color:red;">A</span>GCGGCGGCAGCG <br/> GC<span style="color:red;">G</span>GCGGCGGCA--- </td> 
+     </tr> 
+      <tr>
+       <td> EEEEE <br/> EE-EE </td> 
+     <td> GA<span style="color:red;">A</span>GAAGAGGAGGA<span style="color:red;">A</span> <br/> GA<span style="color:red;">G</span>GAA---GAGGA<span style="color:red;">G</span> </td> 
+     <td class="td3"> EEEEE <br/> EEEE- </td> 
+     <td> GA<span style="color:red;">A</span>GAAGAGGAGGAA <br/> GA<span style="color:red;">G</span>GAAGAGGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> RGPGPG <br/> RG--PG </td> 
+     <td> CGGGGTCCGGGACCGGG<span style="color:red;">G</span> <br/> CGGGGT------CCGGG<span style="color:red;">A</span> </td> 
+     <td class="td3"> RGPGPG <br/> RGPG-- </td> 
+     <td> CGGGGTCCGGGACCGGGG <br/> CGGGGTCCGGGA------ </td> 
+     </tr> 
+      <tr>
+       <td> QQQQQQQQ <br/> QQ----QQ </td> 
+     <td> CAGCAGCAGCAGCAGCAGCA<span style="color:red;">A</span>CA<span style="color:red;">A</span> <br/> CAGCAG------------CA<span style="color:red;">G</span>CA<span style="color:red;">G</span> </td> 
+     <td class="td3"> QQQQQQQQ <br/> QQQQ---- </td> 
+     <td> CAGCAGCAGCAGCAGCAGCAACAA <br/> CAGCAGCAGCAG------------ </td> 
+     </tr> 
+      <tr>
+       <td> QQQQQ <br/> QQ-QQ </td> 
+     <td> CAGCAGCAGCAGCA<span style="color:red;">A</span> <br/> CAGCAG---CAGCA<span style="color:red;">G</span> </td> 
+     <td class="td3"> QQQQQ <br/> QQQQ- </td> 
+     <td> CAGCAGCAGCAGCAA <br/> CAGCAGCAGCAG--- </td> 
+     </tr> 
+      <tr>
+       <td> PGSSS <br/> PG-SS </td> 
+     <td> CCAGGCAGCAGCAG<span style="color:red;">T</span> <br/> CCAGGC---AGCAG<span style="color:red;">C</span> </td> 
+     <td class="td3"> PGSSS <br/> PGSS- </td> 
+     <td> CCAGGCAGCAGCAGT <br/> CCAGGCAGCAGC--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">V</span><span style="color:red;">H</span>SSS <br/> <span style="color:red;">I</span><span style="color:red;">N</span>-SS </td> 
+     <td> <span style="color:red;">G</span>TC<span style="color:red;">C</span>ACAGC<span style="color:red;">T</span><span style="color:red;">C</span>CTC<span style="color:red;">T</span> <br/> <span style="color:red;">A</span>TC<span style="color:red;">A</span>AC---<span style="color:red;">A</span><span style="color:red;">G</span>CTC<span style="color:red;">C</span> </td> 
+     <td class="td3"> <span style="color:red;">V</span><span style="color:red;">H</span>SSS <br/> <span style="color:red;">I</span><span style="color:red;">N</span>SS- </td> 
+     <td> <span style="color:red;">G</span>TC<span style="color:red;">C</span>ACAGCTCCTCT <br/> <span style="color:red;">A</span>TC<span style="color:red;">A</span>ACAGCTCC--- </td> 
+     </tr> 
+      <tr>
+       <td> YQEEE <br/> YQ-EE </td> 
+     <td> TACCAGGAAGA<span style="color:red;">G</span>GA<span style="color:red;">A</span> <br/> TACCAG---GA<span style="color:red;">A</span>GA<span style="color:red;">G</span> </td> 
+     <td class="td3"> YQEEE <br/> YQEE- </td> 
+     <td> TACCAGGAAGAGGAA <br/> TACCAGGAAGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> HSDHDDH <br/> HS---DH </td> 
+     <td> CACAGTGACCATGATGACCA<span style="color:red;">C</span> <br/> CACAGT---------GACCA<span style="color:red;">T</span> </td> 
+     <td class="td3"> HSDHDDH <br/> HSDH--- </td> 
+     <td> CACAGTGACCATGATGACCAC <br/> CACAGTGACCAT--------- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">I</span>YPLLLL <br/> <span style="color:red;">V</span>Y---LL </td> 
+     <td> <span style="color:red;">A</span>T<span style="color:red;">T</span>TACCCCCTGTTGCT<span style="color:red;">G</span>CT<span style="color:red;">A</span> <br/> <span style="color:red;">G</span>T<span style="color:red;">C</span>TAC---------CT<span style="color:red;">C</span>CT<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">I</span>Y<span style="color:red;">P</span>LLLL <br/> <span style="color:red;">V</span>Y<span style="color:red;">L</span>L--- </td> 
+     <td> <span style="color:red;">A</span>T<span style="color:red;">T</span>TACC<span style="color:red;">C</span>CCTGTTGCTGCTA <br/> <span style="color:red;">G</span>T<span style="color:red;">C</span>TACC<span style="color:red;">T</span>CCTG--------- </td> 
+     </tr> 
+      <tr>
+       <td> A<span style="color:red;">S</span>AAAA <br/> A<span style="color:red;">A</span>--AA </td> 
+     <td> GCT<span style="color:red;">T</span>CTGCTGCTGC<span style="color:red;">C</span>GC<span style="color:red;">C</span> <br/> GCT<span style="color:red;">G</span>CT------GC<span style="color:red;">T</span>GC<span style="color:red;">T</span> </td> 
+     <td class="td3"> A<span style="color:red;">S</span>AAAA <br/> A<span style="color:red;">A</span>AA-- </td> 
+     <td> GCT<span style="color:red;">T</span>CTGCTGCTGCCGCC <br/> GCT<span style="color:red;">G</span>CTGCTGCT------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">G</span>QADADAD <br/> <span style="color:red;">E</span>Q----AD </td> 
+     <td> G<span style="color:red;">G</span><span style="color:red;">A</span>CAGGCTGATGCTGACGCTGA<span style="color:red;">C</span> <br/> G<span style="color:red;">A</span><span style="color:red;">G</span>CAG------------GCTGA<span style="color:red;">T</span> </td> 
+     <td class="td3"> <span style="color:red;">G</span>QADADAD <br/> <span style="color:red;">E</span>QAD---- </td> 
+     <td> G<span style="color:red;">G</span><span style="color:red;">A</span>CAGGCTGATGCTGACGCTGAC <br/> G<span style="color:red;">A</span><span style="color:red;">G</span>CAGGCTGAT------------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">F</span>DYGEEH<span style="color:red;">S</span> <br/> <span style="color:red;">L</span>D----H<span style="color:red;">G</span> </td> 
+     <td> TT<span style="color:red;">T</span>GA<span style="color:red;">C</span>TATGGAGAGGAGCA<span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">G</span> <br/> TT<span style="color:red;">G</span>GA<span style="color:red;">T</span>------------CA<span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">A</span> </td> 
+     <td class="td3"> <span style="color:red;">F</span>D<span style="color:red;">Y</span>GEEHS <br/> <span style="color:red;">L</span>D<span style="color:red;">H</span>G---- </td> 
+     <td> TT<span style="color:red;">T</span>GA<span style="color:red;">C</span><span style="color:red;">T</span>A<span style="color:red;">T</span>GGAGAGGAGCATTCG <br/> TT<span style="color:red;">G</span>GA<span style="color:red;">T</span><span style="color:red;">C</span>A<span style="color:red;">C</span>GGA------------ </td> 
+     </tr> 
+      <tr>
+       <td> A<span style="color:red;">I</span>TSKDN<span style="color:red;">N</span> <br/> A<span style="color:red;">V</span>----N<span style="color:red;">S</span> </td> 
+     <td> GC<span style="color:red;">C</span><span style="color:red;">A</span>TCACTTCAAAAGACAAT<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">C</span> <br/> GC<span style="color:red;">T</span><span style="color:red;">G</span>TC------------AAT<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">A</span> </td> 
+     <td class="td3"> A<span style="color:red;">I</span><span style="color:red;">T</span>SKDNN <br/> A<span style="color:red;">V</span><span style="color:red;">N</span>S---- </td> 
+     <td> GC<span style="color:red;">C</span><span style="color:red;">A</span>TCA<span style="color:red;">C</span>TTCAAAAGACAATAAC <br/> GC<span style="color:red;">T</span><span style="color:red;">G</span>TCA<span style="color:red;">A</span>TTCA------------ </td> 
+     </tr> 
+      <tr>
+       <td> E<span style="color:red;">G</span>TLTL <br/> E<span style="color:red;">R</span>--TL </td> 
+     <td> GAA<span style="color:red;">G</span>GAACACTAAC<span style="color:red;">A</span>CT<span style="color:red;">G</span> <br/> GAA<span style="color:red;">A</span>GA------AC<span style="color:red;">G</span>CT<span style="color:red;">A</span> </td> 
+     <td class="td3"> E<span style="color:red;">G</span>TLTL <br/> E<span style="color:red;">R</span>TL-- </td> 
+     <td> GAA<span style="color:red;">G</span>GAAC<span style="color:red;">A</span>CTAACACTG <br/> GAA<span style="color:red;">A</span>GAAC<span style="color:red;">G</span>CTA------ </td> 
+     </tr> 
+      <tr>
+       <td> QQQQQQQ <br/> QQ---QQ </td> 
+     <td> CAGCAGCAACAGCAGCA<span style="color:red;">G</span>CA<span style="color:red;">A</span> <br/> CAGCAG---------CA<span style="color:red;">A</span>CA<span style="color:red;">G</span> </td> 
+     <td class="td3"> QQQQQQQ <br/> QQQQ--- </td> 
+     <td> CAGCAGCAACAGCAGCAGCAA <br/> CAGCAGCAACAG--------- </td> 
+     </tr> 
+      <tr>
+       <td> GGP<span style="color:red;">A</span>A <br/> GG-<span style="color:red;">T</span>A </td> 
+     <td> GGAGGCCCA<span style="color:red;">G</span>C<span style="color:red;">C</span>GC<span style="color:red;">T</span> <br/> GGAGGC---<span style="color:red;">A</span>C<span style="color:red;">A</span>GC<span style="color:red;">C</span> </td> 
+     <td class="td3"> GG<span style="color:red;">P</span>AA <br/> GG<span style="color:red;">T</span>A- </td> 
+     <td> GGAGGC<span style="color:red;">C</span>CAGCCGCT <br/> GGAGGC<span style="color:red;">A</span>CAGCC--- </td> 
+     </tr> 
+      <tr>
+       <td> DDID<span style="color:red;">N</span> <br/> DD-D<span style="color:red;">D</span> </td> 
+     <td> GACGATATTGA<span style="color:red;">C</span><span style="color:red;">A</span>A<span style="color:red;">T</span> <br/> GACGAT---GA<span style="color:red;">T</span><span style="color:red;">G</span>A<span style="color:red;">C</span> </td> 
+     <td class="td3"> DD<span style="color:red;">I</span>DN <br/> DD<span style="color:red;">D</span>D- </td> 
+     <td> GACGAT<span style="color:red;">A</span><span style="color:red;">T</span>TGACAAT <br/> GACGAT<span style="color:red;">G</span><span style="color:red;">A</span>TGAC--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">E</span>HEEE <br/> <span style="color:red;">G</span>H-EE </td> 
+     <td> G<span style="color:red;">A</span><span style="color:red;">A</span>CACGAGGAGGA<span style="color:red;">A</span> <br/> G<span style="color:red;">G</span><span style="color:red;">G</span>CAC---GAGGA<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">E</span>HEEE <br/> <span style="color:red;">G</span>HEE- </td> 
+     <td> G<span style="color:red;">A</span><span style="color:red;">A</span>CACGAGGAGGAA <br/> G<span style="color:red;">G</span><span style="color:red;">G</span>CACGAGGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> N<span style="color:red;">A</span>NR<span style="color:red;">E</span><span style="color:red;">K</span> <br/> N<span style="color:red;">T</span>--<span style="color:red;">D</span><span style="color:red;">V</span> </td> 
+     <td> AAC<span style="color:red;">G</span>CTAATCGAGA<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span> <br/> AAC<span style="color:red;">A</span>CT------GA<span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">A</span> </td> 
+     <td class="td3"> N<span style="color:red;">A</span><span style="color:red;">N</span><span style="color:red;">R</span>EK <br/> N<span style="color:red;">T</span><span style="color:red;">D</span><span style="color:red;">V</span>-- </td> 
+     <td> AAC<span style="color:red;">G</span>CT<span style="color:red;">A</span>AT<span style="color:red;">C</span><span style="color:red;">G</span>AGAGAAG <br/> AAC<span style="color:red;">A</span>CT<span style="color:red;">G</span>AT<span style="color:red;">G</span><span style="color:red;">T</span>A------ </td> 
+     </tr> 
+      <tr>
+       <td> GQSRS<span style="color:red;">S</span> <br/> GQ--S<span style="color:red;">G</span> </td> 
+     <td> GGACAAAGCAGGAGC<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span> <br/> GGACAA------AGC<span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> GQS<span style="color:red;">R</span>SS <br/> GQS<span style="color:red;">G</span>-- </td> 
+     <td> GGACAAAGC<span style="color:red;">A</span>GGAGCTCC <br/> GGACAAAGC<span style="color:red;">G</span>GG------ </td> 
+     </tr> 
+      <tr>
+       <td> EEDEE <br/> EE-EE </td> 
+     <td> GA<span style="color:red;">A</span>GA<span style="color:red;">A</span>GATGA<span style="color:red;">A</span>GA<span style="color:red;">G</span> <br/> GA<span style="color:red;">G</span>GA<span style="color:red;">G</span>---GA<span style="color:red;">G</span>GA<span style="color:red;">A</span> </td> 
+     <td class="td3"> EE<span style="color:red;">D</span>EE <br/> EE<span style="color:red;">E</span>E- </td> 
+     <td> GA<span style="color:red;">A</span>GA<span style="color:red;">A</span>GA<span style="color:red;">T</span>GAAGAG <br/> GA<span style="color:red;">G</span>GA<span style="color:red;">G</span>GA<span style="color:red;">G</span>GAA--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">P</span>YPQPQ <br/> <span style="color:red;">A</span>Y--PQ </td> 
+     <td> <span style="color:red;">C</span>CTTACCCTCAGCCTCA<span style="color:red;">A</span> <br/> <span style="color:red;">G</span>CTTAC------CCTCA<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">P</span>YPQPQ <br/> <span style="color:red;">A</span>YPQ-- </td> 
+     <td> <span style="color:red;">C</span>CTTACCCTCAGCCTCAA <br/> <span style="color:red;">G</span>CTTACCCTCAG------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span>KVE<span style="color:red;">K</span> <br/> <span style="color:red;">L</span>K-E<span style="color:red;">E</span> </td> 
+     <td> <span style="color:red;">T</span>TGAAGGTGGA<span style="color:red;">G</span><span style="color:red;">A</span>A<span style="color:red;">A</span> <br/> <span style="color:red;">C</span>TGAAG---GA<span style="color:red;">A</span><span style="color:red;">G</span>A<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">M</span>K<span style="color:red;">V</span>EK <br/> <span style="color:red;">L</span>K<span style="color:red;">E</span>E- </td> 
+     <td> <span style="color:red;">T</span>TGAAGG<span style="color:red;">T</span><span style="color:red;">G</span>GAGAAA <br/> <span style="color:red;">C</span>TGAAGG<span style="color:red;">A</span><span style="color:red;">A</span>GAG--- </td> 
+     </tr> 
+      <tr>
+       <td> YGE<span style="color:red;">E</span><span style="color:red;">C</span> <br/> YG-<span style="color:red;">G</span><span style="color:red;">V</span> </td> 
+     <td> TATGGGGAAG<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">C</span> <br/> TATGGG---G<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> YG<span style="color:red;">E</span><span style="color:red;">E</span>C <br/> YG<span style="color:red;">G</span><span style="color:red;">V</span>- </td> 
+     <td> TATGGGG<span style="color:red;">A</span>AG<span style="color:red;">A</span>GTGC <br/> TATGGGG<span style="color:red;">G</span>AG<span style="color:red;">T</span>G--- </td> 
+     </tr> 
+      <tr>
+       <td> GPGVR<span style="color:red;">T</span> <br/> GP--R<span style="color:red;">V</span> </td> 
+     <td> GGTCCTGGAGTCAGA<span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">T</span> <br/> GGTCCT------AGA<span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> GP<span style="color:red;">G</span>VRT <br/> GP<span style="color:red;">R</span>V-- </td> 
+     <td> GGTCCT<span style="color:red;">G</span>GAGTCAGAACT <br/> GGTCCT<span style="color:red;">A</span>GAGTC------ </td> 
+     </tr> 
+      <tr>
+       <td> PQPPPP<span style="color:red;">P</span>P <br/> PQ----<span style="color:red;">A</span>P </td> 
+     <td> CCGCAGCCACCGCCGCCA<span style="color:red;">C</span>CACC<span style="color:red;">A</span> <br/> CCGCAG------------<span style="color:red;">G</span>CACC<span style="color:red;">G</span> </td> 
+     <td class="td3"> PQ<span style="color:red;">P</span>PPPPP <br/> PQ<span style="color:red;">A</span>P---- </td> 
+     <td> CCGCAG<span style="color:red;">C</span>CACCGCCGCCACCACCA <br/> CCGCAG<span style="color:red;">G</span>CACCG------------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">P</span><span style="color:red;">E</span>G<span style="color:red;">L</span>L <br/> <span style="color:red;">S</span><span style="color:red;">Q</span>-<span style="color:red;">Y</span>L </td> 
+     <td> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span>AGGGT<span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span>CT<span style="color:red;">C</span> <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>AG---<span style="color:red;">T</span><span style="color:red;">A</span><span style="color:red;">T</span>CT<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">P</span><span style="color:red;">E</span><span style="color:red;">G</span>LL <br/> <span style="color:red;">S</span><span style="color:red;">Q</span><span style="color:red;">Y</span>L- </td> 
+     <td> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span>AG<span style="color:red;">G</span><span style="color:red;">G</span>TCTGCTC <br/> <span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>AG<span style="color:red;">T</span><span style="color:red;">A</span>TCTG--- </td> 
+     </tr> 
+      <tr>
+       <td> H<span style="color:red;">S</span>PNF<span style="color:red;">L</span><span style="color:red;">R</span> <br/> H<span style="color:red;">H</span>---<span style="color:red;">F</span><span style="color:red;">H</span> </td> 
+     <td> CAC<span style="color:red;">T</span><span style="color:red;">C</span>CCCGAACTTC<span style="color:red;">C</span>T<span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span> <br/> CAC<span style="color:red;">C</span><span style="color:red;">A</span>C---------<span style="color:red;">T</span>T<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> H<span style="color:red;">S</span><span style="color:red;">P</span><span style="color:red;">N</span>FLR <br/> H<span style="color:red;">H</span><span style="color:red;">F</span><span style="color:red;">H</span>--- </td> 
+     <td> CAC<span style="color:red;">T</span><span style="color:red;">C</span>C<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">A</span>ACTTCCTGAGG <br/> CAC<span style="color:red;">C</span><span style="color:red;">A</span>C<span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">C</span>AC--------- </td> 
+     </tr> 
+      <tr>
+       <td> QREKEKEK <br/> QR----EK </td> 
+     <td> CAG<span style="color:red;">C</span>GGGAGAAGGAGAAGGAGAA<span style="color:red;">A</span> <br/> CAG<span style="color:red;">A</span>GG------------GAGAA<span style="color:red;">G</span> </td> 
+     <td class="td3"> QREKEKEK <br/> QREK---- </td> 
+     <td> CAG<span style="color:red;">C</span>GGGAGAAGGAGAAGGAGAAA <br/> CAG<span style="color:red;">A</span>GGGAGAAG------------ </td> 
+     </tr> 
+      <tr>
+       <td> G<span style="color:red;">G</span>GGGGG <br/> G<span style="color:red;">S</span>---GG </td> 
+     <td> GGC<span style="color:red;">G</span>G<span style="color:red;">C</span>GGCGGTGGAGGCGG<span style="color:red;">C</span> <br/> GGC<span style="color:red;">A</span>G<span style="color:red;">T</span>---------GGCGG<span style="color:red;">T</span> </td> 
+     <td class="td3"> G<span style="color:red;">G</span>GGGGG <br/> G<span style="color:red;">S</span>GG--- </td> 
+     <td> GGC<span style="color:red;">G</span>G<span style="color:red;">C</span>GGCGGTGGAGGCGGC <br/> GGC<span style="color:red;">A</span>G<span style="color:red;">T</span>GGCGGT--------- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">A</span>PG<span style="color:red;">D</span>D <br/> <span style="color:red;">G</span>P-<span style="color:red;">E</span>D </td> 
+     <td> G<span style="color:red;">C</span><span style="color:red;">A</span>CCTGGAGA<span style="color:red;">C</span>GA<span style="color:red;">T</span> <br/> G<span style="color:red;">G</span><span style="color:red;">G</span>CCT---GA<span style="color:red;">A</span>GA<span style="color:red;">C</span> </td> 
+     <td class="td3"> <span style="color:red;">A</span>P<span style="color:red;">G</span>DD <br/> <span style="color:red;">G</span>P<span style="color:red;">E</span>D- </td> 
+     <td> G<span style="color:red;">C</span><span style="color:red;">A</span>CCTG<span style="color:red;">G</span>AGACGAT <br/> G<span style="color:red;">G</span><span style="color:red;">G</span>CCTG<span style="color:red;">A</span>AGAC--- </td> 
+     </tr> 
+      <tr>
+       <td> QQQQQQ <br/> QQ--QQ </td> 
+     <td> CAGCAGCAGCAACAGCA<span style="color:red;">G</span> <br/> CAGCAG------CAGCA<span style="color:red;">A</span> </td> 
+     <td class="td3"> QQQQQQ <br/> QQQQ-- </td> 
+     <td> CAGCAGCAGCAACAGCAG <br/> CAGCAGCAGCAA------ </td> 
+     </tr> 
+      <tr>
+       <td> SSGGG <br/> SS-GG </td> 
+     <td> AGCTC<span style="color:red;">A</span>GGTGG<span style="color:red;">C</span>GG<span style="color:red;">T</span> <br/> AGCTC<span style="color:red;">C</span>---GG<span style="color:red;">T</span>GG<span style="color:red;">C</span> </td> 
+     <td class="td3"> SSGGG <br/> SSGG- </td> 
+     <td> AGCTC<span style="color:red;">A</span>GGTGGCGGT <br/> AGCTC<span style="color:red;">C</span>GGTGGC--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">E</span>DLELWS<span style="color:red;">K</span> <br/> <span style="color:red;">K</span>D----S<span style="color:red;">E</span> </td> 
+     <td> <span style="color:red;">G</span>AAGACTTAGAGCTTTGGTCA<span style="color:red;">A</span>A<span style="color:red;">A</span> <br/> <span style="color:red;">A</span>AAGAC------------TCA<span style="color:red;">G</span>A<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">E</span>D<span style="color:red;">L</span>ELWSK <br/> <span style="color:red;">K</span>D<span style="color:red;">S</span>E---- </td> 
+     <td> <span style="color:red;">G</span>AAGACT<span style="color:red;">T</span>AGAGCTTTGGTCAAAA <br/> <span style="color:red;">A</span>AAGACT<span style="color:red;">C</span>AGAG------------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">N</span>SR<span style="color:red;">Q</span><span style="color:red;">P</span> <br/> <span style="color:red;">D</span>S-<span style="color:red;">M</span><span style="color:red;">L</span> </td> 
+     <td> <span style="color:red;">A</span>ACTCCAGG<span style="color:red;">C</span><span style="color:red;">A</span>GC<span style="color:red;">C</span><span style="color:red;">A</span> <br/> <span style="color:red;">G</span>ACTCC---<span style="color:red;">A</span><span style="color:red;">T</span>GC<span style="color:red;">T</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">N</span>S<span style="color:red;">R</span><span style="color:red;">Q</span>P <br/> <span style="color:red;">D</span>S<span style="color:red;">M</span><span style="color:red;">L</span>- </td> 
+     <td> <span style="color:red;">A</span>ACTCCA<span style="color:red;">G</span>GC<span style="color:red;">A</span>GCCA <br/> <span style="color:red;">G</span>ACTCCA<span style="color:red;">T</span>GC<span style="color:red;">T</span>G--- </td> 
+     </tr> 
+      <tr>
+       <td> AAVGGSGG <br/> AA----GG </td> 
+     <td> GCTGCAGTAGGGGGCAGCGG<span style="color:red;">C</span>GG<span style="color:red;">T</span> <br/> GCTGCA------------GG<span style="color:red;">A</span>GG<span style="color:red;">G</span> </td> 
+     <td class="td3"> AA<span style="color:red;">V</span>GGSGG <br/> AA<span style="color:red;">G</span>G---- </td> 
+     <td> GCTGCAG<span style="color:red;">T</span>AGGGGGCAGCGGCGGT <br/> GCTGCAG<span style="color:red;">G</span>AGGG------------ </td> 
+     </tr> 
+      <tr>
+       <td> QQQQQQQQ <br/> QQ----QQ </td> 
+     <td> CA<span style="color:red;">G</span>CA<span style="color:red;">G</span>CAGCAGCAGCAGCA<span style="color:red;">A</span>CA<span style="color:red;">A</span> <br/> CA<span style="color:red;">A</span>CA<span style="color:red;">A</span>------------CA<span style="color:red;">G</span>CA<span style="color:red;">G</span> </td> 
+     <td class="td3"> QQQQQQQQ <br/> QQQQ---- </td> 
+     <td> CA<span style="color:red;">G</span>CA<span style="color:red;">G</span>CAGCAGCAGCAGCAACAA <br/> CA<span style="color:red;">A</span>CA<span style="color:red;">A</span>CAGCAG------------ </td> 
+     </tr> 
+      <tr>
+       <td> QQQQQ <br/> QQ-QQ </td> 
+     <td> CAGCAGCAGCAGCA<span style="color:red;">A</span> <br/> CAGCAG---CAGCA<span style="color:red;">G</span> </td> 
+     <td class="td3"> QQQQQ <br/> QQQQ- </td> 
+     <td> CAGCAGCAGCAGCAA <br/> CAGCAGCAGCAG--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">G</span><span style="color:red;">F</span>IRDG<span style="color:red;">I</span><span style="color:red;">S</span> <br/> <span style="color:red;">A</span><span style="color:red;">L</span>----<span style="color:red;">V</span><span style="color:red;">G</span> </td> 
+     <td> G<span style="color:red;">G</span>G<span style="color:red;">T</span>TCATCAGGGATGGG<span style="color:red;">A</span>T<span style="color:red;">C</span><span style="color:red;">A</span>G<span style="color:red;">C</span> <br/> G<span style="color:red;">C</span>G<span style="color:red;">C</span>TC------------<span style="color:red;">G</span>T<span style="color:red;">T</span><span style="color:red;">G</span>G<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">G</span><span style="color:red;">F</span><span style="color:red;">I</span><span style="color:red;">R</span>DGIS <br/> <span style="color:red;">A</span><span style="color:red;">L</span><span style="color:red;">V</span><span style="color:red;">G</span>---- </td> 
+     <td> G<span style="color:red;">G</span>G<span style="color:red;">T</span>TC<span style="color:red;">A</span>T<span style="color:red;">C</span><span style="color:red;">A</span>GGGATGGGATCAGC <br/> G<span style="color:red;">C</span>G<span style="color:red;">C</span>TC<span style="color:red;">G</span>T<span style="color:red;">T</span><span style="color:red;">G</span>GG------------ </td> 
+     </tr> 
+      <tr>
+       <td> KPPGAG<span style="color:red;">A</span>G <br/> KP----<span style="color:red;">S</span>G </td> 
+     <td> AAGCCCCCGGGTGCGGGT<span style="color:red;">G</span>CGGG<span style="color:red;">C</span> <br/> AAGCCC------------<span style="color:red;">T</span>CGGG<span style="color:red;">T</span> </td> 
+     <td class="td3"> KP<span style="color:red;">P</span>GAGAG <br/> KP<span style="color:red;">S</span>G---- </td> 
+     <td> AAGCCC<span style="color:red;">C</span>CGGGTGCGGGTGCGGGC <br/> AAGCCC<span style="color:red;">T</span>CGGGT------------ </td> 
+     </tr> 
+      <tr>
+       <td> CPPPP <br/> CP-PP </td> 
+     <td> TGCCC<span style="color:red;">G</span>CCGCCGCC<span style="color:red;">A</span> <br/> TGCCC<span style="color:red;">A</span>---CCGCC<span style="color:red;">G</span> </td> 
+     <td class="td3"> CPPPP <br/> CPPP- </td> 
+     <td> TGCCC<span style="color:red;">G</span>CCGCCGCCA <br/> TGCCC<span style="color:red;">A</span>CCGCCG--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">R</span>PPG<span style="color:red;">A</span><span style="color:red;">V</span> <br/> <span style="color:red;">E</span>P--<span style="color:red;">C</span><span style="color:red;">A</span> </td> 
+     <td> <span style="color:red;">A</span><span style="color:red;">G</span>GCC<span style="color:red;">G</span>CCTGGT<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">G</span>G<span style="color:red;">T</span><span style="color:red;">G</span> <br/> <span style="color:red;">G</span><span style="color:red;">A</span>GCC<span style="color:red;">C</span>------<span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">T</span>G<span style="color:red;">C</span><span style="color:red;">T</span> </td> 
+     <td class="td3"> <span style="color:red;">R</span>P<span style="color:red;">P</span><span style="color:red;">G</span>AV <br/> <span style="color:red;">E</span>P<span style="color:red;">C</span><span style="color:red;">A</span>-- </td> 
+     <td> <span style="color:red;">A</span><span style="color:red;">G</span>GCC<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span>TG<span style="color:red;">G</span>TGCGGTG <br/> <span style="color:red;">G</span><span style="color:red;">A</span>GCC<span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span>TG<span style="color:red;">C</span>T------ </td> 
+     </tr> 
+      <tr>
+       <td> HQQQQ <br/> HQ-QQ </td> 
+     <td> CACCAGCAGCAGCA<span style="color:red;">A</span> <br/> CACCAG---CAGCA<span style="color:red;">G</span> </td> 
+     <td class="td3"> HQQQQ <br/> HQQQ- </td> 
+     <td> CACCAGCAGCAGCAA <br/> CACCAGCAGCAG--- </td> 
+     </tr> 
+      <tr>
+       <td> GGHKQP<span style="color:red;">N</span> <br/> GG---P<span style="color:red;">K</span> </td> 
+     <td> GGAGGCCACAAACAACC<span style="color:red;">T</span>AA<span style="color:red;">C</span> <br/> GGAGGC---------CC<span style="color:red;">C</span>AA<span style="color:red;">A</span> </td> 
+     <td class="td3"> GG<span style="color:red;">H</span>KQPN <br/> GG<span style="color:red;">P</span>K--- </td> 
+     <td> GGAGGCC<span style="color:red;">A</span>CAAACAACCTAAC <br/> GGAGGCC<span style="color:red;">C</span>CAAA--------- </td> 
+     </tr> 
+      <tr>
+       <td> HHGE<span style="color:red;">D</span> <br/> HH-E<span style="color:red;">E</span> </td> 
+     <td> CATCA<span style="color:red;">C</span>GGAGA<span style="color:red;">G</span>GA<span style="color:red;">C</span> <br/> CATCA<span style="color:red;">T</span>---GA<span style="color:red;">A</span>GA<span style="color:red;">G</span> </td> 
+     <td class="td3"> HH<span style="color:red;">G</span>ED <br/> HH<span style="color:red;">E</span>E- </td> 
+     <td> CATCA<span style="color:red;">C</span>G<span style="color:red;">G</span>AGAGGAC <br/> CATCA<span style="color:red;">T</span>G<span style="color:red;">A</span>AGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> RRH<span style="color:red;">F</span>F <br/> RR-<span style="color:red;">Y</span>F </td> 
+     <td> AGAAGACATT<span style="color:red;">T</span><span style="color:red;">C</span>TT<span style="color:red;">T</span> <br/> AGAAGA---T<span style="color:red;">A</span><span style="color:red;">T</span>TT<span style="color:red;">C</span> </td> 
+     <td class="td3"> RR<span style="color:red;">H</span>FF <br/> RR<span style="color:red;">Y</span>F- </td> 
+     <td> AGAAGA<span style="color:red;">C</span>ATTTCTTT <br/> AGAAGA<span style="color:red;">T</span>ATTTC--- </td> 
+     </tr> 
+      <tr>
+       <td> YEYFDN<span style="color:red;">V</span> <br/> YE---N<span style="color:red;">Y</span> </td> 
+     <td> TATGAGTACTTTGACAAC<span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">A</span> <br/> TATGAG---------AAC<span style="color:red;">T</span><span style="color:red;">A</span><span style="color:red;">T</span> </td> 
+     <td class="td3"> YE<span style="color:red;">Y</span><span style="color:red;">F</span>DNV <br/> YE<span style="color:red;">N</span><span style="color:red;">Y</span>--- </td> 
+     <td> TATGAG<span style="color:red;">T</span>ACT<span style="color:red;">T</span>TGACAACGTA <br/> TATGAG<span style="color:red;">A</span>ACT<span style="color:red;">A</span>T--------- </td> 
+     </tr> 
+      <tr>
+       <td> VASGP<span style="color:red;">S</span> <br/> VA--P<span style="color:red;">D</span> </td> 
+     <td> GTGGCTTCCGGCCC<span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">A</span> <br/> GTGGCT------CC<span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> VA<span style="color:red;">S</span><span style="color:red;">G</span>PS <br/> VA<span style="color:red;">P</span><span style="color:red;">D</span>-- </td> 
+     <td> GTGGCT<span style="color:red;">T</span>C<span style="color:red;">C</span>G<span style="color:red;">G</span>CCCCTCA <br/> GTGGCT<span style="color:red;">C</span>C<span style="color:red;">T</span>G<span style="color:red;">A</span>C------ </td> 
+     </tr> 
+      <tr>
+       <td> QNYSS <br/> QN-SS </td> 
+     <td> CAGAACTACTC<span style="color:red;">T</span>TC<span style="color:red;">C</span> <br/> CAGAAC---TC<span style="color:red;">C</span>TC<span style="color:red;">T</span> </td> 
+     <td class="td3"> QN<span style="color:red;">Y</span>SS <br/> QN<span style="color:red;">S</span>S- </td> 
+     <td> CAGAACT<span style="color:red;">A</span>CTCTTCC <br/> CAGAACT<span style="color:red;">C</span>CTCT--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">P</span><span style="color:red;">H</span>L<span style="color:red;">P</span><span style="color:red;">T</span> <br/> <span style="color:red;">L</span><span style="color:red;">Y</span>-<span style="color:red;">H</span><span style="color:red;">A</span> </td> 
+     <td> C<span style="color:red;">C</span>T<span style="color:red;">C</span>ATCTCC<span style="color:red;">C</span>C<span style="color:red;">A</span>C<span style="color:red;">T</span> <br/> C<span style="color:red;">T</span>T<span style="color:red;">T</span>AT---C<span style="color:red;">A</span>C<span style="color:red;">G</span>C<span style="color:red;">C</span> </td> 
+     <td class="td3"> <span style="color:red;">P</span><span style="color:red;">H</span><span style="color:red;">L</span><span style="color:red;">P</span>T <br/> <span style="color:red;">L</span><span style="color:red;">Y</span><span style="color:red;">H</span><span style="color:red;">A</span>- </td> 
+     <td> C<span style="color:red;">C</span>T<span style="color:red;">C</span>ATC<span style="color:red;">T</span>C<span style="color:red;">C</span>CCACT <br/> C<span style="color:red;">T</span>T<span style="color:red;">T</span>ATC<span style="color:red;">A</span>C<span style="color:red;">G</span>CC--- </td> 
+     </tr> 
+      <tr>
+       <td> TQPR<span style="color:red;">S</span>R <br/> TQ--<span style="color:red;">Q</span>R </td> 
+     <td> ACGCAGCCGAGA<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span>G<span style="color:red;">G</span> <br/> ACGCAG------<span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span>G<span style="color:red;">A</span> </td> 
+     <td class="td3"> TQ<span style="color:red;">P</span>RSR <br/> TQ<span style="color:red;">Q</span>R-- </td> 
+     <td> ACGCAGC<span style="color:red;">C</span>G<span style="color:red;">A</span>GATCAAGG <br/> ACGCAGC<span style="color:red;">A</span>G<span style="color:red;">C</span>GA------ </td> 
+     </tr> 
+      <tr>
+       <td> VTVQPV* <br/> VT---V* </td> 
+     <td> GTCACTGTGCAGCCTGT<span style="color:red;">C</span>T<span style="color:red;">G</span><span style="color:red;">A</span> <br/> GTCACT---------GT<span style="color:red;">G</span>T<span style="color:red;">A</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> VTVQPV* <br/> VTV*--- </td> 
+     <td> GTCACTGTG<span style="color:red;">C</span>AGCCTGTCTGA <br/> GTCACTGTG<span style="color:red;">T</span>AG--------- </td> 
+     </tr> 
+      <tr>
+       <td> PPTTTT <br/> PP--TT </td> 
+     <td> CCTCCCACAACAAC<span style="color:red;">C</span>AC<span style="color:red;">C</span> <br/> CCTCCC------AC<span style="color:red;">A</span>AC<span style="color:red;">A</span> </td> 
+     <td class="td3"> PPTTTT <br/> PPTT-- </td> 
+     <td> CCTCCCACAACAACCACC <br/> CCTCCCACAACA------ </td> 
+     </tr> 
+      <tr>
+       <td> AEEEE <br/> AE-EE </td> 
+     <td> GCGGA<span style="color:red;">G</span>GAGGAGGA<span style="color:red;">A</span> <br/> GCGGA<span style="color:red;">A</span>---GAGGA<span style="color:red;">G</span> </td> 
+     <td class="td3"> AEEEE <br/> AEEE- </td> 
+     <td> GCGGA<span style="color:red;">G</span>GAGGAGGAA <br/> GCGGA<span style="color:red;">A</span>GAGGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> PGPPP <br/> PG-PP </td> 
+     <td> CCGGGCCCGCCGCC<span style="color:red;">T</span> <br/> CCGGGC---CCGCC<span style="color:red;">G</span> </td> 
+     <td class="td3"> PGPPP <br/> PGPP- </td> 
+     <td> CCGGGCCCGCCGCCT <br/> CCGGGCCCGCCG--- </td> 
+     </tr> 
+      <tr>
+       <td> DHS<span style="color:red;">S</span>S <br/> DH-<span style="color:red;">N</span>S </td> 
+     <td> GACCACAGC<span style="color:red;">T</span><span style="color:red;">C</span>CTC<span style="color:red;">A</span> <br/> GACCAC---<span style="color:red;">A</span><span style="color:red;">A</span>CTC<span style="color:red;">C</span> </td> 
+     <td class="td3"> DH<span style="color:red;">S</span>SS <br/> DH<span style="color:red;">N</span>S- </td> 
+     <td> GACCACA<span style="color:red;">G</span>CTCCTCA <br/> GACCACA<span style="color:red;">A</span>CTCC--- </td> 
+     </tr> 
+      <tr>
+       <td> TVPPP <br/> TV-PP </td> 
+     <td> ACCGTGCCTCCTCC<span style="color:red;">A</span> <br/> ACCGTG---CCTCC<span style="color:red;">T</span> </td> 
+     <td class="td3"> TVPPP <br/> TVPP- </td> 
+     <td> ACCGTGCCTCCTCCA <br/> ACCGTGCCTCCT--- </td> 
+     </tr> 
+      <tr>
+       <td> KKAAA <br/> KK-AA </td> 
+     <td> AAGAAGGCGGCGGC<span style="color:red;">A</span> <br/> AAGAAG---GCGGC<span style="color:red;">G</span> </td> 
+     <td class="td3"> KKAAA <br/> KKAA- </td> 
+     <td> AAGAAGGCGGCGGCA <br/> AAGAAGGCGGCG--- </td> 
+     </tr> 
+      <tr>
+       <td> SPTPP <br/> SP-PP </td> 
+     <td> TCACCAACGCC<span style="color:red;">T</span>CC<span style="color:red;">G</span> <br/> TCACCA---CC<span style="color:red;">G</span>CC<span style="color:red;">T</span> </td> 
+     <td class="td3"> SP<span style="color:red;">T</span>PP <br/> SP<span style="color:red;">P</span>P- </td> 
+     <td> TCACCA<span style="color:red;">A</span>CGCCTCCG <br/> TCACCA<span style="color:red;">C</span>CGCCT--- </td> 
+     </tr> 
+      <tr>
+       <td> LCKN<span style="color:red;">S</span> <br/> LC-N<span style="color:red;">I</span> </td> 
+     <td> CTCTGCAAGAAT<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">C</span> <br/> CTCTGC---AAT<span style="color:red;">A</span><span style="color:red;">T</span><span style="color:red;">T</span> </td> 
+     <td class="td3"> LC<span style="color:red;">K</span><span style="color:red;">N</span>S <br/> LC<span style="color:red;">N</span><span style="color:red;">I</span>- </td> 
+     <td> CTCTGCAA<span style="color:red;">G</span>A<span style="color:red;">A</span>TTCC <br/> CTCTGCAA<span style="color:red;">T</span>A<span style="color:red;">T</span>T--- </td> 
+     </tr> 
+      <tr>
+       <td> EGKKMH<span style="color:red;">R</span><span style="color:red;">A</span> <br/> EG----<span style="color:red;">P</span><span style="color:red;">L</span> </td> 
+     <td> GA<span style="color:red;">A</span>GGTAAGAAGATGCAC<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span> <br/> GA<span style="color:red;">G</span>GGT------------<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> EG<span style="color:red;">K</span><span style="color:red;">K</span>MHRA <br/> EG<span style="color:red;">P</span><span style="color:red;">L</span>---- </td> 
+     <td> GA<span style="color:red;">A</span>GGT<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span>GATGCACAGGGCC <br/> GA<span style="color:red;">G</span>GGT<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span>G------------ </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">Q</span>SE<span style="color:red;">E</span>E <br/> <span style="color:red;">N</span>S-<span style="color:red;">D</span>E </td> 
+     <td> <span style="color:red;">C</span>A<span style="color:red;">G</span>AGCGAAGA<span style="color:red;">G</span>GA<span style="color:red;">A</span> <br/> <span style="color:red;">A</span>A<span style="color:red;">C</span>AGC---GA<span style="color:red;">T</span>GA<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">Q</span>S<span style="color:red;">E</span>EE <br/> <span style="color:red;">N</span>S<span style="color:red;">D</span>E- </td> 
+     <td> <span style="color:red;">C</span>A<span style="color:red;">G</span>AGCGA<span style="color:red;">A</span>GAGGAA <br/> <span style="color:red;">A</span>A<span style="color:red;">C</span>AGCGA<span style="color:red;">T</span>GAG--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">E</span>LKKK <br/> <span style="color:red;">Q</span>L-KK </td> 
+     <td> <span style="color:red;">G</span>A<span style="color:red;">A</span>CTCAAGAAGAA<span style="color:red;">A</span> <br/> <span style="color:red;">C</span>A<span style="color:red;">G</span>CTC---AAGAA<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">E</span>LKKK <br/> <span style="color:red;">Q</span>LKK- </td> 
+     <td> <span style="color:red;">G</span>A<span style="color:red;">A</span>CTCAAGAAGAAA <br/> <span style="color:red;">C</span>A<span style="color:red;">G</span>CTCAAGAAG--- </td> 
+     </tr> 
+      <tr>
+       <td> EEEEE <br/> EE-EE </td> 
+     <td> GAGGAAGAGGAGGA<span style="color:red;">A</span> <br/> GAGGAA---GAGGA<span style="color:red;">G</span> </td> 
+     <td class="td3"> EEEEE <br/> EEEE- </td> 
+     <td> GAGGAAGAGGAGGAA <br/> GAGGAAGAGGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> NDG<span style="color:red;">E</span>E <br/> ND-<span style="color:red;">D</span>E </td> 
+     <td> AA<span style="color:red;">T</span>GATGGTGA<span style="color:red;">A</span>GA<span style="color:red;">G</span> <br/> AA<span style="color:red;">C</span>GAT---GA<span style="color:red;">T</span>GA<span style="color:red;">A</span> </td> 
+     <td class="td3"> ND<span style="color:red;">G</span>EE <br/> ND<span style="color:red;">D</span>E- </td> 
+     <td> AA<span style="color:red;">T</span>GATG<span style="color:red;">G</span>TGAAGAG <br/> AA<span style="color:red;">C</span>GATG<span style="color:red;">A</span>TGAA--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">G</span>PTL<span style="color:red;">H</span>L <br/> <span style="color:red;">A</span>P--<span style="color:red;">R</span>L </td> 
+     <td> G<span style="color:red;">G</span><span style="color:red;">G</span>CCTACTTTGC<span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">C</span>T<span style="color:red;">C</span> <br/> G<span style="color:red;">C</span><span style="color:red;">A</span>CCT------C<span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">T</span>T<span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">G</span>P<span style="color:red;">T</span>LHL <br/> <span style="color:red;">A</span>P<span style="color:red;">R</span>L-- </td> 
+     <td> G<span style="color:red;">G</span><span style="color:red;">G</span>CCT<span style="color:red;">A</span><span style="color:red;">C</span>TTTGCACCTC <br/> G<span style="color:red;">C</span><span style="color:red;">A</span>CCT<span style="color:red;">C</span><span style="color:red;">G</span>TTTG------ </td> 
+     </tr> 
+      <tr>
+       <td> SEEEE <br/> SE-EE </td> 
+     <td> AGTGAGGAGGAGGA<span style="color:red;">A</span> <br/> AGTGAG---GAGGA<span style="color:red;">G</span> </td> 
+     <td class="td3"> SEEEE <br/> SEEE- </td> 
+     <td> AGTGAGGAGGAGGAA <br/> AGTGAGGAGGAG--- </td> 
+     </tr> 
+      <tr>
+       <td> KEKKK <br/> KE-KK </td> 
+     <td> AAAGAGAAGAA<span style="color:red;">A</span>AA<span style="color:red;">G</span> <br/> AAAGAG---AA<span style="color:red;">G</span>AA<span style="color:red;">A</span> </td> 
+     <td class="td3"> KEKKK <br/> KEKK- </td> 
+     <td> AAAGAGAAGAAAAAG <br/> AAAGAGAAGAAA--- </td> 
+     </tr> 
+      <tr>
+       <td> SPMGM<span style="color:red;">W</span><span style="color:red;">P</span> <br/> SP---<span style="color:red;">Y</span><span style="color:red;">E</span> </td> 
+     <td> <span style="color:red;">A</span><span style="color:red;">G</span>TCC<span style="color:red;">C</span>ATGGGAATGT<span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span> <br/> <span style="color:red;">T</span><span style="color:red;">C</span>TCC<span style="color:red;">T</span>---------T<span style="color:red;">A</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">A</span><span style="color:red;">A</span> </td> 
+     <td class="td3"> SP<span style="color:red;">M</span><span style="color:red;">G</span>MWP <br/> SP<span style="color:red;">Y</span><span style="color:red;">E</span>--- </td> 
+     <td> <span style="color:red;">A</span><span style="color:red;">G</span>TCC<span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">T</span><span style="color:red;">G</span>G<span style="color:red;">G</span>AATGTGGCCT <br/> <span style="color:red;">T</span><span style="color:red;">C</span>TCC<span style="color:red;">T</span><span style="color:red;">T</span><span style="color:red;">A</span><span style="color:red;">C</span>G<span style="color:red;">A</span>A--------- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">P</span><span style="color:red;">C</span>HNLPS<span style="color:red;">Q</span> <br/> <span style="color:red;">G</span><span style="color:red;">G</span>----S<span style="color:red;">A</span> </td> 
+     <td> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span>G<span style="color:red;">C</span>CACAACCTACCC<span style="color:red;">A</span><span style="color:red;">G</span>C<span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span> <br/> <span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">G</span>G<span style="color:red;">G</span>------------<span style="color:red;">T</span><span style="color:red;">C</span>C<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> <span style="color:red;">P</span><span style="color:red;">C</span><span style="color:red;">H</span><span style="color:red;">N</span>LPSQ <br/> <span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">S</span><span style="color:red;">A</span>---- </td> 
+     <td> <span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">T</span>G<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">A</span>C<span style="color:red;">A</span><span style="color:red;">A</span>CCTACCCAGCCAG <br/> <span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">G</span>G<span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">C</span>C<span style="color:red;">G</span><span style="color:red;">C</span>C------------ </td> 
+     </tr> 
+      <tr>
+       <td> NAPPP <br/> NA-PP </td> 
+     <td> AA<span style="color:red;">C</span>GCTCCTCC<span style="color:red;">T</span>CC<span style="color:red;">G</span> <br/> AA<span style="color:red;">T</span>GCT---CC<span style="color:red;">C</span>CC<span style="color:red;">T</span> </td> 
+     <td class="td3"> NAPPP <br/> NAPP- </td> 
+     <td> AA<span style="color:red;">C</span>GCTCC<span style="color:red;">T</span>CCTCCG <br/> AA<span style="color:red;">T</span>GCTCC<span style="color:red;">C</span>CCT--- </td> 
+     </tr> 
+      <tr>
+       <td> PEPRPRPR <br/> PE----PR </td> 
+     <td> CCAGAACCACGTCCACGCCC<span style="color:red;">A</span>CG<span style="color:red;">C</span> <br/> CCAGAA------------CC<span style="color:red;">C</span>CG<span style="color:red;">T</span> </td> 
+     <td class="td3"> PEPRPRPR <br/> PEPR---- </td> 
+     <td> CCAGAACC<span style="color:red;">A</span>CGTCCACGCCCACGC <br/> CCAGAACC<span style="color:red;">C</span>CGT------------ </td> 
+     </tr> 
+      <tr>
+       <td> QQQP<span style="color:red;">A</span> <br/> QQ-P<span style="color:red;">P</span> </td> 
+     <td> CAGCAGCAGCC<span style="color:red;">G</span><span style="color:red;">G</span>C<span style="color:red;">A</span> <br/> CAGCAG---CC<span style="color:red;">C</span><span style="color:red;">C</span>C<span style="color:red;">G</span> </td> 
+     <td class="td3"> QQ<span style="color:red;">Q</span>PA <br/> QQ<span style="color:red;">P</span>P- </td> 
+     <td> CAGCAGC<span style="color:red;">A</span><span style="color:red;">G</span>CCGGCA <br/> CAGCAGC<span style="color:red;">C</span><span style="color:red;">C</span>CCG--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">S</span>LP<span style="color:red;">S</span>S <br/> <span style="color:red;">G</span>L-<span style="color:red;">T</span>S </td> 
+     <td> <span style="color:red;">A</span>GCCTGCCT<span style="color:red;">T</span>C<span style="color:red;">A</span>TC<span style="color:red;">C</span> <br/> <span style="color:red;">G</span>GCCTG---<span style="color:red;">A</span>C<span style="color:red;">T</span>TC<span style="color:red;">A</span> </td> 
+     <td class="td3"> <span style="color:red;">S</span>L<span style="color:red;">P</span>SS <br/> <span style="color:red;">G</span>L<span style="color:red;">T</span>S- </td> 
+     <td> <span style="color:red;">A</span>GCCTG<span style="color:red;">C</span>CTTCATCC <br/> <span style="color:red;">G</span>GCCTG<span style="color:red;">A</span>CTTCA--- </td> 
+     </tr> 
+      <tr>
+       <td> SSSSS <br/> SS-SS </td> 
+     <td> TC<span style="color:red;">C</span>TCTTCCTC<span style="color:red;">T</span>TC<span style="color:red;">C</span> <br/> TC<span style="color:red;">T</span>TCT---TC<span style="color:red;">C</span>TC<span style="color:red;">T</span> </td> 
+     <td class="td3"> SSSSS <br/> SSSS- </td> 
+     <td> TC<span style="color:red;">C</span>TCTTCCTCTTCC <br/> TC<span style="color:red;">T</span>TCTTCCTCT--- </td> 
+     </tr> 
+      <tr>
+       <td> <span style="color:red;">M</span>QHVQDQ<span style="color:red;">A</span> <br/> <span style="color:red;">L</span>Q----Q<span style="color:red;">L</span> </td> 
+     <td> CTGCAGCATGTGCAAGATCA<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span> <br/> CTGCAG------------CA<span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span> </td> 
+     <td class="td3"> <span style="color:red;">M</span>Q<span style="color:red;">H</span><span style="color:red;">V</span>QDQA <br/> <span style="color:red;">L</span>Q<span style="color:red;">Q</span><span style="color:red;">L</span>---- </td> 
+     <td> CTGCAGCA<span style="color:red;">T</span><span style="color:red;">G</span>TGCAAGATCAAGCA <br/> CTGCAGCA<span style="color:red;">G</span><span style="color:red;">C</span>TG------------ </td> 
+     </tr> 
+      <tr>
+       <td> TGENDDE<span style="color:red;">N</span> <br/> TG----E<span style="color:red;">G</span> </td> 
+     <td> ACAGG<span style="color:red;">T</span>GAAAACGACGATGAA<span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">T</span> <br/> ACAGG<span style="color:red;">C</span>------------GAA<span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> TGE<span style="color:red;">N</span>DDEN <br/> TGE<span style="color:red;">G</span>---- </td> 
+     <td> ACAGG<span style="color:red;">T</span>GAA<span style="color:red;">A</span><span style="color:red;">A</span>CGACGATGAAAAT <br/> ACAGG<span style="color:red;">C</span>GAA<span style="color:red;">G</span><span style="color:red;">G</span>C------------ </td> 
+     </tr> 
+      <tr>
+       <td> ILAAA <br/> IL-AA </td> 
+     <td> ATCTTGGCTGC<span style="color:red;">A</span>GC<span style="color:red;">T</span> <br/> ATCTTG---GC<span style="color:red;">T</span>GC<span style="color:red;">A</span> </td> 
+     <td class="td3"> ILAAA <br/> ILAA- </td> 
+     <td> ATCTTGGCTGCAGCT <br/> ATCTTGGCTGCA--- </td> 
+     </tr> 
+      <tr>
+       <td> DVT<span style="color:red;">S</span><span style="color:red;">N</span> <br/> DV-<span style="color:red;">P</span><span style="color:red;">G</span> </td> 
+     <td> GATGTGACT<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">A</span><span style="color:red;">T</span> <br/> GATGTG---<span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">T</span><span style="color:red;">G</span><span style="color:red;">G</span><span style="color:red;">C</span> </td> 
+     <td class="td3"> DV<span style="color:red;">T</span><span style="color:red;">S</span>N <br/> DV<span style="color:red;">P</span><span style="color:red;">G</span>- </td> 
+     <td> GATGTG<span style="color:red;">A</span>CT<span style="color:red;">A</span>GCAAT <br/> GATGTG<span style="color:red;">C</span>CT<span style="color:red;">G</span>GC--- </td> 
+     </tr> 
+      <tr>
+       <td> GDAAA <br/> GD-AA </td> 
+     <td> GGGGACGCAGC<span style="color:red;">A</span>GC<span style="color:red;">C</span> <br/> GGGGAC---GC<span style="color:red;">T</span>GC<span style="color:red;">A</span> </td> 
+     <td class="td3"> GDAAA <br/> GDAA- </td> 
+     <td> GGGGACGC<span style="color:red;">A</span>GCAGCC <br/> GGGGACGC<span style="color:red;">T</span>GCA--- </td> 
+     </tr> 
+      <tr>
+       <td> ISTAA <br/> IS-AA </td> 
+     <td> ATCTC<span style="color:red;">C</span>ACAGC<span style="color:red;">T</span>GC<span style="color:red;">A</span> <br/> ATCTC<span style="color:red;">T</span>---GC<span style="color:red;">A</span>GC<span style="color:red;">T</span> </td> 
+     <td class="td3"> IS<span style="color:red;">T</span>AA <br/> IS<span style="color:red;">A</span>A- </td> 
+     <td> ATCTC<span style="color:red;">C</span><span style="color:red;">A</span>CAGCTGCA <br/> ATCTC<span style="color:red;">T</span><span style="color:red;">G</span>CAGCT--- </td> 
+     </tr> 
+      <tr>
+       <td> QVPAGHS<span style="color:red;">Q</span> <br/> QV----S<span style="color:red;">S</span> </td> 
+     <td> CAGGTCCCAGCTGGCCAT<span style="color:red;">A</span><span style="color:red;">G</span><span style="color:red;">C</span><span style="color:red;">C</span><span style="color:red;">A</span><span style="color:red;">G</span> <br/> CAGGTC------------<span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">G</span><span style="color:red;">T</span><span style="color:red;">C</span><span style="color:red;">T</span> </td> 
+     <td class="td3"> QV<span style="color:red;">P</span><span style="color:red;">A</span>GHSQ <br/> QV<span style="color:red;">S</span><span style="color:red;">S</span>---- </td> 
+     <td> CAGGTC<span style="color:red;">C</span>C<span style="color:red;">A</span><span style="color:red;">G</span>CTGGCCATAGCCAG <br/> CAGGTC<span style="color:red;">T</span>C<span style="color:red;">G</span><span style="color:red;">T</span>CT------------ </td> 
+     </tr> 
+      <tr>
+       <td> PASSS <br/> PA-SS </td> 
+     <td> CCTGCATCC<span style="color:red;">A</span><span style="color:red;">G</span>CAG<span style="color:red;">T</span> <br/> CCTGCA---<span style="color:red;">T</span><span style="color:red;">C</span>CAG<span style="color:red;">C</span> </td> 
+     <td class="td3"> PASSS <br/> PASS- </td> 
+     <td> CCTGCATCCAGCAGT <br/> CCTGCATCCAGC--- </td> 
+     </tr> 
+    </table>
+  </body>
+</html>

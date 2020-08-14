@@ -1,0 +1,3 @@
+focal_name	eff_1	non_1	eff_2	non_2
+Mouse	198	11	83	215
+Rat	222	16	96	226

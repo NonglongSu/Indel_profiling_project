@@ -1,0 +1,148 @@
+#!/bin/bash
+
+#Variables
+RSCRIPT=Rscript --vanilla
+MAFFT=mafft --maxiterate 1000 --preservecase --globalpair
+PRANK=prank -F
+RM=rm -i -f
+array="c('human','mouse','rat')"
+
+LIST=../../Raw_data/nameList.1.txt
+
+
+###############################################
+
+default:all
+all:    cdstop aa mafft prank mapped_mafft mapped_prank pair_mafft pair_prank
+
+.PHONY:  default all clean
+.PHONY:  filterA cdstop aa mafft prank mapped_mafft mapped_prank pair_mafft pair_prank
+.PHONY:	 aa_rev mafft_rev
+
+#######################################################PART 2
+
+#Generate new namelist
+NAMELIST_NEW:= $(shell test -f $(LIST) && cat $(LIST) | sed -e 's/.fa//g')
+#NAMELIST_NEW:=$(shell test -f nameList.3.txt && cat nameList.3.txt | sed -e 's/.fa//g')
+#NAMELIST_NEW:=$(shell test -f nameList.2.txt && cat nameList.2.txt | sed -e 's/.fa//g')
+#NAMELIST_NEW:=$(shell test -f nameList.txt && cat nameList.txt     | sed -e 's/.fa//g')
+
+########################################################################
+cds_seq_stop:   		cdstop
+aa_seq:				aa
+
+aa_reverse_seq:			aa_rev
+Alignments/mafft_reverse_out:	mafft_rev
+
+
+Alignments/mafft_out:		mafft
+Alignments/prank_out:		prank
+mapped_cds_mafft_Tmp:		mapped_mafft
+mapped_cds_prank_Tmp:		mapped_prank
+mapped_cds_mafft:		pair_mafft
+mapped_cds_prank:		pair_prank
+
+
+cdstop:  	$(patsubst %,cds_seq_stop/%.fa,$(NAMELIST_NEW)) 
+aa:      	$(patsubst %,aa_seq/%.fa,$(NAMELIST_NEW))
+
+aa_rev:      	$(patsubst %,aa_reverse_seq/%.fa,$(NAMELIST_NEW))
+mafft_rev:   	$(patsubst %,Alignments/mafft_reverse_out/%.fa,$(NAMELIST_NEW))
+
+
+mafft:   	$(patsubst %,Alignments/mafft_out/%.fa,$(NAMELIST_NEW))
+prank:   	$(patsubst %,Alignments/prank_out/%.fa,$(NAMELIST_NEW))
+mapped_mafft:   $(patsubst %,mapped_cds_mafft_Tmp/%.fa,$(NAMELIST_NEW))
+mapped_prank:   $(patsubst %,mapped_cds_prank_Tmp/%.fa,$(NAMELIST_NEW))
+pair_mafft:     $(patsubst %,mapped_cds_mafft/%.fa,$(NAMELIST_NEW))
+pair_prank:     $(patsubst %,mapped_cds_prank/%.fa,$(NAMELIST_NEW))
+
+
+
+#cds_seq_stop/%.fa: 	  	 | cds_seq/%.fa
+#aa_seq/%.fa:         		 | cds_seq_stop/%.fa
+#Alignments/mafft_out/%.fa:      | aa_seq/%.fa
+#Alignments/Prank_out/%.fa:	 | aa_seq/%.fa
+#mapped_cds_mafft_Tmp/%.fq:	 | Alignments/mafft_out/%.fa cds_seq_stop/%.fa
+#mapped_cds_prank_Tmp/%.fq:	 | Alignments/prank_out/%.fa cds_seq_stop/%.fa
+#mapped_cds_mafft/%.fq:	 	 | mapped_cds_mafft_Tmp/%.fa
+#mapped_cds_prank/%.fq:	 	 | mapped_cds_prank_Tmp/%.fa
+
+
+#Add stopcodon
+cds_seq_stop/%.fa: ../Script/Add_stopCodon.R cds_seq/%.fa cds_seq_stop/
+	$(RSCRIPT) $< $(word 2, $^) $(word 3,$^)
+.SECONDARY: cds_seq_stop/%.fa
+
+#Translation
+aa_seq/%.fa:../Script/dna_to_aa.R cds_seq/%.fa aa_seq/ 
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^)
+.SECONDARY: aa_seq/%.fa
+
+#Reverse AA seq
+aa_reverse_seq/%.fa:../../Script/rev_aa.R aa_seq/%.fa aa_reverse_seq/ 
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^)
+.SECONDARY: aa_reverse_seq/%.fa
+
+
+#MSA
+Alignments/mafft_out/%.fa: aa_reverse_seq/%.fa
+	$(MAFFT) $< > $@
+.SECONDARY: Alignments/mafft_out/%.fa
+
+
+Alignments/prank_out/%.fa: aa_seq/%.fa
+	$(PRANK) -d=$< -o=Alignments/prank_out/$* -f=fasta
+	test -f Alignments/prank_out/$*.best.fas && mv Alignments/prank_out/$*.best.fas $@
+.SECONDARY: Alignments/prank_out/%.fa
+
+#Reverse back
+Alignments/mafft_reverse_out/%.fa: ../../Script/rev_aa.R Alignments/mafft_out/%.fa Alignments/mafft_reverse_out/
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^)
+.SECONDARY: Alignments/mafft_reverse_out/%.fa
+
+
+
+#Abnormal mapping
+
+mapped_cds_mafft_Tmp/%.fa: ../../Script/mapping_cds2aa.R  Alignments/mafft_reverse_out/%.fa ../../Raw_data/cds_seq_stop/%.fa mapped_cds_mafft_Tmp/ 
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^) $(word 4,$^) ${array}
+.SECONDARY: mapped_cds_mafft_Tmp/%.fa
+
+mapped_cds_prank_Tmp/%.fa: ../Script/mapping_cds2aa.R  Alignments/prank_reverse_out/%.fa cds_seq_stop/%.fa mapped_cds_prank_Tmp/
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^) $(word 4,$^) ${array}
+.SECONDARY: mapped_cds_prank_Tmp/%.fa
+
+
+#Pair-species only
+#Do not forget to change the fiel.path
+mapped_cds_mafft/%.fa: ../../Script/pair.species.R mapped_cds_mafft_Tmp/%.fa mapped_cds_mafft/ 
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^)
+
+mapped_cds_prank/%.fa: ../Script/pair.species.R mapped_cds_prank_Tmp/%.fa mapped_cds_prank/
+	$(RSCRIPT) $< $(word 2,$^) $(word 3,$^) 
+
+
+#parallel --link Rscript --vanilla ../Script/mapping_cds2aa.R ::: mafft_out/* ::: cds_seq/*
+#Run [bash nameCheck.sh emptyCheck.sh] to fix any broken pipe.
+#################################################################################################################################
+
+clean:
+	@$(RM) cds_seq/*
+	@$(RM) cds_seq_stop/*
+	@$(RM) aa_seq/*
+	@$(RM) Alignments/mafft_out/*
+	@$(RM) Alignments/prank_out/*
+	@$(RM) mapped_cds_mafft_Tmp/*
+	@$(RM) mapped_cds_prank_Tmp/*
+	@$(RM) mapped_cds_mafft/*
+	@$(RM) mapped_cds_prank/*
+
+help:
+	@echo "help me, master Ziqi!"	
+
+
+
+
+
+

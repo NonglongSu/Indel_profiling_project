@@ -1,0 +1,13 @@
+Phase_0	Phase_1	Phase_2	insertion	deletion	gap.length
+251	119	147	226	291	3
+92	35	62	86	103	6
+53	22	26	49	52	9
+38	12	24	28	46	12
+434	188	259	389	492	T
+
+Phase_0	Phase_1	Phase_2	insertion	deletion	gap.length
+526	173	237	322	614	3
+99	40	66	75	130	6
+52	28	37	46	71	9
+45	18	21	32	52	12
+722	259	361	475	867	T
