@@ -1,6 +1,6 @@
 # Profliling of Indel phases in coding regions
-Find the **real indels ** that cannot be determined due to the limitation of current software. 
-Use indel phases  
+* Find the **real indels ** that cannot be determined due to the limitation of current software.  
+* Use indel phases  
 
 ## Requirements
 * R 3.4.4 + 
@@ -13,48 +13,48 @@ Use indel phases
 ## Part I
 ### 1. Find homologs in multiple species (Ex. human/mouse/rat) 
 make homoCall 
-* human/mouse/rat         -- 14547
+* human/mouse/rat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- 14547
 * human/hamster/mouse/rat -- 13890
-* mouse/human/macaque     -- 14422
+* mouse/human/macaque &nbsp; &nbsp; &nbsp;- 14422
 
 ### 2. Extract all protein coding sequences in each species.
-make cds 
-make filter
-mkae addStop
-* human/mouse/rat         -- 14532
+make cds  
+make filter  
+make addStop  
+* human/mouse/rat         -- 14532  
 * human/hamster/mouse/rat -- 13881
 * mouse/human/macaque     -- 14418
 
 ### 3. Quality control test
-make test_mul_3
-make test_N
-make test_stop
-make test_preStop
+make test_mul_3  
+make test_N  
+make test_stop  
+make test_preStop  
 
 ### 4. Translation of nucleotide to amino acid for each sequence.
-make aa
-make aaFix
+make aa  
+make aaFix  
 
 ### 5. Multiple sequence alignment of cds.
-make mafft
-make prank
+make mafft  
+make prank  
 
 ### 6. Abnormal mapping (From aa --> dna)
-make mapped_mafft
-make mapped_prank
+make mapped_mafft  
+make mapped_prank  
 
-##Part II
+## Part II
 ### 7. Include gaps of length = {3, 6, 9, 12} only.
-make mafft_upc
-make prank_upc
+make mafft_upc   
+make prank_upc  
 
 ### 8. Find the "true" gaps based on sliding-window method. 
-make mafft_map
+make mafft_map  
 * h/m/r >>>>
-* Data_3  : 2034
-* Data_6  : 1712 
-* Data_9  : 1652
-* Data_12 : 1605
+* Data_3   : 2034
+* Data_6   : 1712 
+* Data_9   : 1652
+* Data_12  : 1605
 
 * h/c/m/r >>>>
 
