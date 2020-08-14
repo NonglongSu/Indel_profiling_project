@@ -13,17 +13,17 @@
 ## Part I
 ### 1. Find homologs in multiple species (Ex. human/mouse/rat) 
 make homoCall 
-* human/mouse/rat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- 14547
+* human/mouse/rat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- 14547
 * human/hamster/mouse/rat -- 13890
-* mouse/human/macaque &nbsp; &nbsp; &nbsp;--14422
+* mouse/human/macaque &nbsp; &nbsp;-- 14422
 
 ### 2. Extract all protein coding sequences in each species.
 make cds  
 make filter  
 make addStop  
-* human/mouse/rat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- 14532  
+* human/mouse/rat &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- 14532  
 * human/hamster/mouse/rat -- 13881
-* mouse/human/macaque &nbsp; &nbsp; &nbsp;--14418
+* mouse/human/macaque &nbsp; &nbsp;-- 14418
 
 ### 3. Quality control test
 make test_mul_3  
